@@ -19,6 +19,9 @@
 !.config/bash/*/
 !.config/bash/*/*
 
+# Installed pacman apps
+!.config/.apps
+
 # Wallpapers
 !.local/
 !.local/share/
