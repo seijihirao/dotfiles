@@ -42,6 +42,9 @@
 !.local/share/wallpapers/min/
 !.local/share/wallpapers/min/*
 
+!.config/variety/
+!.config/variety/variety.conf
+
 # Vim
 !.vimrc
 
