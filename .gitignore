@@ -8,6 +8,9 @@
 !.bash_logout
 
 !.config/
-!.config/yakuakerc
+!.config/bash/
+!.config/bash/*
+!.config/bash/*/
+!.config/bash/*/*
 
 !.vimrc
