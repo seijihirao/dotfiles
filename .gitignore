@@ -25,11 +25,19 @@
 
 # XFCE
 !.config/xfce4/
+!.config/xfce4/desktop/
+!.config/xfce4/desktop/*
 !.config/xfce4/panel/
 !.config/xfce4/panel/*
 !.config/xfce4/xfconf/
 !.config/xfce4/xfconf/xfce-perchannel-xml/
-!.config/xfce4/xfconf/xfce-perchannel-xml/*
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
+# !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml # Desktop is managed by variety
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
 !.config/xfce4/xfwm4/
 !.config/xfce4/xfwm4/*
 
