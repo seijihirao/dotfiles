@@ -1,0 +1,11 @@
+[Desktop Entry]
+NoDisplay=true
+Version=1.0
+Encoding=UTF-8
+Type=X-XFCE-Helper
+X-XFCE-Category=WebBrowser
+X-XFCE-CommandsWithParameter=firefox-aurora "%s"
+Icon=firefox-aurora
+Name=firefox-aurora
+X-XFCE-Commands=firefox-aurora
+

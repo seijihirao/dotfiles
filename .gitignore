@@ -5,6 +5,11 @@
 
 !.gitignore
 
+# Common folders
+!.config/
+!.local/
+!.local/share/
+
 # Git
 !.gitignore_global
 !.gitconfig
@@ -14,7 +19,6 @@
 !.bash_profile
 !.bash_logout
 
-!.config/
 !.config/bash/
 !.config/bash/*
 !.config/bash/*/
@@ -41,9 +45,11 @@
 !.config/xfce4/xfwm4/
 !.config/xfce4/xfwm4/*
 
+!.local/share/xfce4/
+!.local/share/xfce4/helpers
+!.local/share/xfce4/helpers/*
+
 # Wallpapers
-!.local/
-!.local/share/
 !.local/share/wallpapers/
 !.local/share/wallpapers/min/
 !.local/share/wallpapers/min/*
