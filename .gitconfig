@@ -1,3 +1,9 @@
 [user]
 	name = Rodrigo Seiji Piubeli Hirao
 	email = rodrigo.seiji.hirao@gmail.com
+
+[core]
+	editor = vim
+	fileMode = false
+	excludesfile = /home/seiji/.gitignore_global
+	quotepath = false
