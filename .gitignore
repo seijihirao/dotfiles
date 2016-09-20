@@ -28,3 +28,6 @@
 
 # Vim
 !.vimrc
+
+# README
+!README.md
