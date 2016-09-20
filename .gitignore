@@ -1,8 +1,14 @@
+# First ignoring all files
 *
+
+# Now removing from ignore list
+
 !.gitignore
 
+# Git
 !.gitconfig
 
+# Bash
 !.bashrc
 !.bash_profile
 !.bash_logout
@@ -13,10 +19,12 @@
 !.config/bash/*/
 !.config/bash/*/*
 
+# Wallpapers
 !.local/
 !.local/share/
 !.local/share/wallpapers/
 !.local/share/wallpapers/min/
 !.local/share/wallpapers/min/*
 
+# Vim
 !.vimrc
