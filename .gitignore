@@ -23,6 +23,18 @@
 # Installed pacman apps
 !.config/.apps
 
+# XFCE
+!.config/xfce4/
+!.config/xfce4/desktop/
+!.config/xfce4/desktop/*
+!.config/xfce4/panel/
+!.config/xfce4/panel/*
+!.config/xfce4/xfconf/
+!.config/xfce4/xfconf/xfce-perchannel-xml/
+!.config/xfce4/xfconf/xfce-perchannel-xml/*
+!.config/xfce4/xfwm4/
+!.config/xfce4/xfwm4/*
+
 # Wallpapers
 !.local/
 !.local/share/
