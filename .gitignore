@@ -32,5 +32,9 @@
 # Vim
 !.vimrc
 
+# MPV
+!.config/mpv/
+!.config/mpv/input.conf
+
 # README
 !README.md
