@@ -1,0 +1,13 @@
+*
+!.gitignore
+
+!.gitconfig
+
+!.bashrc
+!.bash_profile
+!.bash_logout
+
+!.config/
+!.config/yakuakerc
+
+!.vimrc
