@@ -4,9 +4,9 @@ if [[ $- != *i* ]] ; then
 fi
 
 # Run all config files
-for file in ~/.config/bash/*.sh; do
-    . $file
-done
+#for file in ~/.config/bash/*.sh; do
+#    . $file
+#done
 
 # Run all config files
 for file in ~/.config/bash/**/*.sh; do
