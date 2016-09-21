@@ -47,13 +47,18 @@
 !.local/share/xfce4/helpers
 !.local/share/xfce4/helpers/*
 
-# Wallpapers
+# Desktop Environment
 !.local/share/wallpapers/
 !.local/share/wallpapers/min/
 !.local/share/wallpapers/min/*
 
 !.config/variety/
 !.config/variety/variety.conf
+
+!.conky/
+!.conky/*
+!.conky/**/
+!.conky/**/*
 
 # Vim
 !.vimrc
