@@ -53,7 +53,7 @@ gcc-test(){
     GREEN='\033[0;32m'
     RESET="$(tput sgr0)"
     
-    if gcc $debug -std=c99 -pedantic -Wall -lm ./*.c -o "$program" ; then
+    if gcc $debug -std=c99 -pedantic -Wall -lm ./*.c -o "$program".o ; then
         if [ -z "$valgrind" ]; then
             if [ "$output" != "" ] ; then
                 if diff -Naur "$output" <("./$program" < "$input") ; then
