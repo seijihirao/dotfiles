@@ -79,5 +79,9 @@
 !.mozilla/firefox/profile/
 !.mozilla/firefox/profile/user.js
 
+# Anime
+!.trackma/
+!.trackma/*.json
+
 # README
 !README.md
