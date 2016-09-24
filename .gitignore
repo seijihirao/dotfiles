@@ -72,5 +72,12 @@
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
 
+# Firefox
+!.mozilla/
+!.mozilla/firefox/
+!.mozilla/firefox/profiles.ini
+!.mozilla/firefox/profile/
+!.mozilla/firefox/profile/user.js
+
 # README
 !README.md
