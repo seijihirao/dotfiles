@@ -72,5 +72,9 @@
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
 
+# Firefox
+!.mozilla/
+!.mozilla/*
+
 # README
 !README.md
