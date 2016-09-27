@@ -47,6 +47,12 @@
 !.local/share/xfce4/helpers
 !.local/share/xfce4/helpers/*
 
+# Sound
+
+!.config/pulse/
+!.config/pulse/*.pa
+!.config/pulse/equalizer-*.tdb
+
 # Desktop Environment
 !.local/share/wallpapers/
 !.local/share/wallpapers/min/

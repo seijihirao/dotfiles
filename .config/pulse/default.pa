@@ -1,0 +1,8 @@
+### Automatically restore the volume of streams and devices
+load-module module-device-restore
+load-module module-stream-restore
+load-module module-card-restore
+
+### Load the integrated pulseaudio equalizer and dbus modules
+load-module module-equalizer-sink
+load-module module-dbus-protocol
