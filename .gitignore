@@ -51,7 +51,8 @@
 
 !.config/pulse/
 !.config/pulse/*.pa
-!.config/pulse/equalizer-*.tdb
+!.pulse/
+!.pulse/equalizer-*.tdb
 
 # Desktop Environment
 !.local/share/wallpapers/
