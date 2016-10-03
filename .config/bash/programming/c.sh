@@ -56,21 +56,21 @@ gcc-test(){
     if gcc $debug -std=c99 -pedantic -Wall -lm ./*.c -o "$program".o ; then
         if [ -z "$valgrind" ]; then
             if [ "$output" != "" ] ; then
-                if diff -Naur "$output" <("./$program" < "$input") ; then
+                if diff -Naur "$output" <("./$program".o < "$input") ; then
                     printf "${GREEN}OK!\n${RESET}"
                 fi
             else
                 if [ "$input" != "" ] ; then    
-                    "./$program" < "$input"
+                    "./$program".o < "$input"
                 else
-                    "./$program"
+                    "./$program".o
                 fi
             fi
         else
                 if [ "$input" != "" ] ; then
-                    valgrind --leak-check=full -v "./$program" < "$input"
+                    valgrind --leak-check=full -v "./$program".o < "$input"
                 else
-                    valgrind --leak-check=full -v "./$program"
+                    valgrind --leak-check=full -v "./$program".o
                 fi
         fi
     fi
