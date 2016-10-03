@@ -1,7 +1,5 @@
-
 set nocompatible
 set encoding=utf8
-
 
 set title " Change the terminal title
 syntax on " Turn syntax highlighting on
@@ -16,3 +14,6 @@ set expandtab
 
 " Make copy/paste between vim instances
 set clipboard=unnamedplus
+
+" Remove Line Wrap
+set wrap!
