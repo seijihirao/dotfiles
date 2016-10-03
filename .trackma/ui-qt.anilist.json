@@ -1,0 +1,9 @@
+{
+    "columns_state": {},
+    "visible_columns": [
+        "Title",
+        "Progress",
+        "Score",
+        "Percent"
+    ]
+}
