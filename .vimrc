@@ -1,6 +1,9 @@
 set nocompatible
 set encoding=utf8
 
+" Remove vim swap files
+set noswapfile
+
 set title " Change the terminal title
 syntax on " Turn syntax highlighting on
 set number " Show line numbers
