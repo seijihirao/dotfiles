@@ -82,6 +82,9 @@
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
 
+# PAM ENV
+!.pam_environment
+
 #
 # Media
 #
