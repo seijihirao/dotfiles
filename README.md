@@ -6,6 +6,6 @@ Here are listed my shared configuration files :)! Feel free to use something or 
 
 ## My Apps
 
-My apps are located at `.config/apps`
+My apps are located at `.config/.apps`
 
 Just run `$ sudo xargs pacman -S --needed --noconfirm < .config/.apps`
