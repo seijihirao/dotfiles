@@ -1,0 +1,11 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Configure glob patterns for excluding files and folders.
+    "files.exclude": {
+        // Python
+        ".venv/**/*": true,
+        "*.pyc": true,
+        "*.egg*": true,
+        "build/**/**": true
+    }
+}

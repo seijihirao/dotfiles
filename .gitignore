@@ -27,7 +27,15 @@
 # Installed pacman apps
 !.config/.apps
 
+# README
+!README.md
+
+#
+# Environment
+#
+
 # XFCE
+
 !.config/xfce4/
 !.config/xfce4/desktop/
 !.config/xfce4/desktop/*
@@ -54,7 +62,8 @@
 !.pulse/
 !.pulse/equalizer-*.tdb
 
-# Desktop Environment
+# Desktop
+
 !.local/share/wallpapers/
 !.local/share/wallpapers/min/
 !.local/share/wallpapers/min/*
@@ -67,17 +76,15 @@
 !.conky/**/
 !.conky/**/*
 
-# Vim
-!.vimrc
+# File Manager
 
-# MPV
-!.config/mpv/
-!.config/mpv/input.conf
-
-# Pcmanfm
 !.config/pcmanfm/
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
+
+#
+# Media
+#
 
 # Firefox
 !.mozilla/
@@ -86,9 +93,22 @@
 !.mozilla/firefox/profile/
 !.mozilla/firefox/profile/user.js
 
+# MPV
+!.config/mpv/
+!.config/mpv/input.conf
+
 # Anime
 !.trackma/
 !.trackma/*.json
 
-# README
-!README.md
+#
+# Programming
+#
+
+# Vim
+!.vimrc
+
+# Visual Studio
+!.config/Code\ -\ OSS
+!.config/Code\ -\ OSS/User
+!.config/Code\ -\ OSS/User/settings.json
