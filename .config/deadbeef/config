@@ -29,25 +29,25 @@ hotkey.key08 "Ctrl j" 0 0 jump_to_current_track
 hotkey.key09 "F1" 0 0 help
 hotkey.key10 "Delete" 1 0 remove_from_playlist
 hotkey.key11 "Ctrl w" 0 0 remove_current_playlist
-hotkey.key14 "Return" 0 0 play
-hotkey.key15 "Ctrl p" 0 0 toggle_pause
-hotkey.key16 "Alt 1" 0 0 playlist1
-hotkey.key17 "Alt 2" 0 0 playlist2
-hotkey.key18 "Alt 3" 0 0 playlist3
-hotkey.key19 "Alt 4" 0 0 playlist4
-hotkey.key20 "Alt 5" 0 0 playlist5
-hotkey.key21 "Alt 6" 0 0 playlist6
-hotkey.key22 "Alt 7" 0 0 playlist7
-hotkey.key23 "Alt 8" 0 0 playlist8
-hotkey.key24 "Alt 9" 0 0 playlist9
-hotkey.key25 "Alt 0" 0 0 playlist10
-hotkey.key26 z 0 0 prev
-hotkey.key27 x 0 0 play
-hotkey.key28 c 0 0 toggle_pause
-hotkey.key29 v 0 0 stop
-hotkey.key30 b 0 0 next
-hotkey.key31 n 0 0 playback_random
-hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
+hotkey.key12 "Return" 0 0 play
+hotkey.key13 "space" 0 0 toggle_pause
+hotkey.key14 "Alt 1" 0 0 playlist1
+hotkey.key15 "Alt 2" 0 0 playlist2
+hotkey.key16 "Alt 3" 0 0 playlist3
+hotkey.key17 "Alt 4" 0 0 playlist4
+hotkey.key18 "Alt 5" 0 0 playlist5
+hotkey.key19 "Alt 6" 0 0 playlist6
+hotkey.key20 "Alt 7" 0 0 playlist7
+hotkey.key21 "Alt 8" 0 0 playlist8
+hotkey.key22 "Alt 9" 0 0 playlist9
+hotkey.key23 "Alt 0" 0 0 playlist10
+hotkey.key24 "z" 0 0 prev
+hotkey.key25 "x" 0 0 play
+hotkey.key26 "c" 0 0 toggle_pause
+hotkey.key27 "v" 0 0 stop
+hotkey.key28 "b" 0 0 next
+hotkey.key29 "n" 0 0 playback_random
+hotkey.key30 "Ctrl k" 0 0 toggle_stop_after_album
 hotkeys_created 1
 ignore_archives 1
 junk.enable_cp1251_detection 1
@@ -71,8 +71,8 @@ playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Default
 prefwin.geometry.h 472
 prefwin.geometry.w 650
-prefwin.geometry.x 2001
-prefwin.geometry.y 304
+prefwin.geometry.x 276
+prefwin.geometry.y 98
 replaygain_mode 0
 replaygain_scale 1
 streamer.8_to_16 1
