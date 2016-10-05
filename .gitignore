@@ -93,9 +93,13 @@
 !.mozilla/firefox/profile/
 !.mozilla/firefox/profile/user.js
 
-# MPV
+# Video - MPV
 !.config/mpv/
 !.config/mpv/input.conf
+
+# Music - DeadBeef
+!.config/deadbeef/
+!.config/deadbeef/config
 
 # Anime
 !.trackma/
