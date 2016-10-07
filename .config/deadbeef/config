@@ -3,9 +3,10 @@ cli_add_playlist_name Default
 cli_add_to_specific_playlist 1
 close_send_to_tray 1
 deadbeef_version 0.7.2
-filechooser.lastdir file:///home/seiji/Downloads
+filechooser.lastdir file:///home/seiji
 gtkui.autoresize_columns 1
 gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","size":"32","align":"0","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"%artist%","size":"179","align":"0","color_override":"0","color":"#ff000000"},{"title":"Album","id":"-1","format":"%album%","size":"208","align":"0","color_override":"0","color":"#ff555555"},{"title":"Title","id":"-1","format":"%title%","size":"323","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","size":"107","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.eq.visible 0
 gtkui.hide_remove_from_disk 1
 gtkui.hide_tray_icon 1
 gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } vsplitter pos=582 locked=0 {hsplitter pos=1149 locked=0 {tabbed_playlist hideheaders=0 width=1149 {} vsplitter pos=225 locked=0 {coverart {} selproperties {} } } hsplitter pos=683 locked=0 {spectrum {} scope {} } } } 
@@ -14,7 +15,7 @@ gtkui.name_playlist_from_folder 1
 gtkui.override_bar_colors 0
 gtkui.override_listview_colors 0
 gtkui.statusbar.visible 1
-gtkui.tabscroll 0
+gtkui.tabscroll 310
 gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
 gtkui.titlebar_stopped_tf DeaDBeeF-%_deadbeef_version%
 gui_plugin GTK3
@@ -48,6 +49,10 @@ hotkey.key27 "v" 0 0 stop
 hotkey.key28 "b" 0 0 next
 hotkey.key29 "n" 0 0 playback_random
 hotkey.key30 "Ctrl k" 0 0 toggle_stop_after_album
+hotkey.key31 "Right" 0 0 seek_5s_fwd
+hotkey.key32 "Left" 0 0 seek_5s_back
+hotkey.key33 "Ctrl Right" 0 0 seek_5p_fwd
+hotkey.key34 "Ctrl Left" 0 0 seek_5p_back
 hotkeys_created 1
 ignore_archives 1
 junk.enable_cp1251_detection 1
@@ -64,13 +69,16 @@ network.proxy.type HTTP
 playback.loop 0
 playback.order 0
 playback.volume 0.0000000
-playlist.current 0
-playlist.cursor.0 0
-playlist.scroll.0 0
+playlist.current 1
+playlist.cursor.0 21
+playlist.cursor.1 0
+playlist.scroll.0 224
+playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Default
+playlist.tab.00001 Avenged Sevenfold - Nightmare
 prefwin.geometry.h 472
-prefwin.geometry.w 650
+prefwin.geometry.w 653
 prefwin.geometry.x 276
 prefwin.geometry.y 98
 replaygain_mode 0
