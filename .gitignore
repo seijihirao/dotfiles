@@ -91,6 +91,16 @@
 !.pam_environment
 
 #
+# Terminal
+#
+
+# Konsole/Yakuake
+!.config/konsolerc
+!.config/yakuakerc
+!.local/share/konsole/
+!.local/share/konsole/*
+
+#
 # Media
 #
 
