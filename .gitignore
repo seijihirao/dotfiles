@@ -34,6 +34,11 @@
 # Environment
 #
 
+# Autostart
+
+!.config/autostart/
+!.config/autostart/*
+
 # XFCE
 
 !.config/xfce4/
