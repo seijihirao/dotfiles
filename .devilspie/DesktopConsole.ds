@@ -8,7 +8,7 @@
             (skip_pager)
             (skip_tasklist)
             (wintype "utility")
-            (geometry "1366x768")
+            (geometry "1366x728")
         )
     )
     (if
@@ -20,7 +20,7 @@
             (skip_pager)
             (skip_tasklist)
             (wintype "utility")
-            (geometry "1366x768")
+            (geometry "1266x728+0+0")
         )
     )
     (if
@@ -32,7 +32,7 @@
             (skip_pager)
             (skip_tasklist)
             (wintype "utility")
-            (geometry "1366x768")
+            (geometry "1366x728")
         )
     )
     (if
@@ -44,7 +44,7 @@
             (skip_pager)
             (skip_tasklist)
             (wintype "utility")
-            (geometry "1366x768")
+            (geometry "1366x728")
         )
     )
 )
