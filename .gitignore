@@ -92,6 +92,9 @@
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
 
+!.config/xfce4/terminal/
+!.config/xfce4/terminal/*
+
 # PAM ENV
 !.pam_environment
 
