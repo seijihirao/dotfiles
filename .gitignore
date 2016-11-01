@@ -42,6 +42,7 @@
 # XFCE
 
 !.config/xfce4/
+!.config/xfce4/*
 !.config/xfce4/desktop/
 !.config/xfce4/desktop/*
 !.config/xfce4/xfconf/

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+xfce4-terminal --default-working-directory=/home/seiji/ --hide-menubar &
+xfce4-terminal --default-working-directory=/home/seiji/Downloads --hide-menubar &
+xfce4-terminal --default-working-directory=/home/seiji/Documents --hide-menubar &
+xfce4-terminal --default-working-directory=/ --hide-menubar &
+
+sleep 3 && devilspie &
