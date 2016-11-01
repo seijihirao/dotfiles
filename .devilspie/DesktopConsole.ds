@@ -1,0 +1,51 @@
+(begin
+    (if
+        (is (window_name) "Terminal - seiji@Seiji-PC:/home/seiji")
+        (begin
+            (set_workspace 1)
+            (below)
+            (undecorate)
+            (skip_pager)
+            (skip_tasklist)
+            (wintype "utility")
+            (geometry "1366x768")
+        )
+    )
+    (if
+        (is (window_name) "Terminal - seiji@Seiji-PC:/home/seiji/Downloads")
+        (begin
+            (set_workspace 2)
+            (below)
+            (undecorate)
+            (skip_pager)
+            (skip_tasklist)
+            (wintype "utility")
+            (geometry "1366x768")
+        )
+    )
+    (if
+        (is (window_name) "Terminal - seiji@Seiji-PC:/")
+        (begin
+            (set_workspace 3)
+            (below)
+            (undecorate)
+            (skip_pager)
+            (skip_tasklist)
+            (wintype "utility")
+            (geometry "1366x768")
+        )
+    )
+    (if
+        (is (window_name) "Terminal - seiji@Seiji-PC:/home/seiji/Documents")
+        (begin
+            (set_workspace 4)
+            (below)
+            (undecorate)
+            (skip_pager)
+            (skip_tasklist)
+            (wintype "utility")
+            (geometry "1366x768")
+        )
+    )
+)
+

@@ -38,6 +38,7 @@
 
 !.config/autostart/
 !.config/autostart/*
+# !.config/xfce4/autostart # added bellow
 
 # XFCE
 
@@ -81,6 +82,9 @@
 !.conky/*
 !.conky/**/
 !.conky/**/*
+
+!.devilspie
+!.devilspie/*
 
 # File Manager
 
