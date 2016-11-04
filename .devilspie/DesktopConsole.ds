@@ -12,7 +12,7 @@
         )
     )
     (if
-        (is (window_name) "Terminal - seiji@Seiji-PC:/home/seiji/Downloads")
+        (is (window_name) "seiji - File Manager")
         (begin
             (set_workspace 2)
             (below)
@@ -20,7 +20,7 @@
             (skip_pager)
             (skip_tasklist)
             (wintype "utility")
-            (geometry "1266x728+0+0")
+            (geometry "1366x728")
         )
     )
     (if
