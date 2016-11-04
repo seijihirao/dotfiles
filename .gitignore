@@ -92,6 +92,9 @@
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
 
+!.config/Thunar/
+!.config/Thunar/*
+
 !.config/xfce4/terminal/
 !.config/xfce4/terminal/*
 
