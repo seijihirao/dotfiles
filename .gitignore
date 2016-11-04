@@ -86,17 +86,15 @@
 !.devilspie
 !.devilspie/*
 
-# File Manager
-
+# File Manager - pcmanfm
 !.config/pcmanfm/
 !.config/pcmanfm/default/
 !.config/pcmanfm/default/pcmanfm.conf
 
+# File Manager - thunar
 !.config/Thunar/
 !.config/Thunar/*
 
-!.config/xfce4/terminal/
-!.config/xfce4/terminal/*
 
 # PAM ENV
 !.pam_environment
@@ -111,11 +109,15 @@
 !.local/share/konsole/
 !.local/share/konsole/*
 
+# xfce4-terminal
+!.config/xfce4/terminal/
+!.config/xfce4/terminal/*
+
 #
 # Media
 #
 
-# Firefox
+# Browser - Firefox
 !.mozilla/
 !.mozilla/firefox/
 !.mozilla/firefox/profiles.ini
