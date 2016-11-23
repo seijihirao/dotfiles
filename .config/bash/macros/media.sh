@@ -19,7 +19,10 @@ add-cover(){
         # Adds to mp3 files
         mp3_files=`ls -1 *.mp3 2>/dev/null | wc -l`
         if [ $mp3_files != 0 ]; then
-            lame --ti ${img} *.mp3
+            for song in ./*.mp3; do
+                lame --ti ${img} ${song}
+                mv -f ${song}.mp3 ${song}
+            done
         fi
         
         total_files=$(($flac_files + $mp3_files))
