@@ -7,6 +7,11 @@
 *.o
 *.so
 
+# Environment files #
+#####################
+
+.venv/
+
 # Temporary files #
 ###################
 *.swp
