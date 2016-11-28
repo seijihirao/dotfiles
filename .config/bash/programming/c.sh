@@ -1,5 +1,8 @@
 #!/bin/bash
-# compile and run C with tests
+
+# 
+# Compile and run C with tests
+#
 gcc-test(){
     ARGS=$(getopt -o ":i:o:d" -l "input:,output:,debug,valgrind" -n "gcc-test" -- "$@");
     
@@ -56,7 +59,11 @@ gcc-test(){
     if gcc $debug -std=c99 -pedantic -Wall -lm ./*.c -o "$program".o ; then
         if [ -z "$valgrind" ]; then
             if [ "$output" != "" ] ; then
-                if diff -Naur "$output" <("./$program".o < "$input") ; then
+                diff="diff"
+                if command -v colordiff >/dev/null 2>&1 ; then
+                    diff="colordiff"
+                fi
+                if $diff -Naur "$output" <("./$program".o < "$input") ; then
                     printf "${GREEN}OK!\n${RESET}"
                 fi
             else
