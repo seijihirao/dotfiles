@@ -8,4 +8,6 @@
         "*.egg*": true,
         "build/**/**": true
     }
+,
+"git.confirmSync": false
 }
