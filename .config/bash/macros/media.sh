@@ -30,3 +30,13 @@ add-cover(){
         
     done
 }
+
+# Splits audio with cue file
+split-audio(){
+    for cue in ./*.cue; do
+        file=$(cat ${cue} | grep FILE)
+        file=${file%\"*}
+        file=${file#*\"}
+        shnsplit -f "${cue}" "${file}"
+    done
+}
