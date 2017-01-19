@@ -1,10 +1,13 @@
 #!/bin/sh
 
-deluge &
 thunar ~/Downloads &
 
 xfce4-terminal --default-working-directory=/home/seiji/ --hide-menubar &
 xfce4-terminal --default-working-directory=/home/seiji/Documents --hide-menubar &
 xfce4-terminal --default-working-directory=/ --hide-menubar &
 
-sleep 7 && devilspie &
+trackma-gtk &
+
+deluge &
+
+sleep 6 && devilspie &

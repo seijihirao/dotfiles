@@ -17,7 +17,7 @@
     "last_width": 740,
     "remember_geometry": false,
     "show_tray": true,
-    "start_in_tray": true,
+    "start_in_tray": false,
     "tray_api_icon": false,
     "visible_columns": [
         "Title",

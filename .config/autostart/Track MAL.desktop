@@ -8,5 +8,5 @@ Exec=trackma-gtk
 OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
-Hidden=false
+Hidden=true
 
