@@ -7,4 +7,4 @@ xfce4-terminal --default-working-directory=/home/seiji/ --hide-menubar &
 xfce4-terminal --default-working-directory=/home/seiji/Documents --hide-menubar &
 xfce4-terminal --default-working-directory=/ --hide-menubar &
 
-sleep 6 && devilspie &
+sleep 7 && devilspie &
