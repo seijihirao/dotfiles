@@ -22,11 +22,11 @@
             (opacity 95)
             (unmaximize)
             (wintype "normal")
-            (geometry "800x278+0+0")
+            (geometry "800x368+0+0")
         )
     )
     (if
-        (is (application_name) "deluge")
+        (is (window_name) "Deluge")
         (begin
             (set_workspace 2)
             (below)
@@ -36,7 +36,7 @@
             (opacity 95)
             (unmaximize)
             (wintype "normal")
-            (geometry "800x450+0+278")
+            (geometry "800x360+0+368")
         )
     )
     (if
@@ -50,7 +50,7 @@
             (opacity 95)
             (unmaximize)
             (wintype "normal")
-            (geometry "566x768+800+0")
+            (geometry "566x728+800+0")
         )
     )
     (if
