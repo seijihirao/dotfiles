@@ -6,7 +6,7 @@ xfce4-terminal --default-working-directory=/home/seiji/ --hide-menubar &
 xfce4-terminal --default-working-directory=/home/seiji/Documents --hide-menubar &
 xfce4-terminal --default-working-directory=/ --hide-menubar &
 
-trackma-gtk &
+# trackma-gtk &
 
 deluge &
 
