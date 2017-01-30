@@ -86,22 +86,33 @@
 !.devilspie
 !.devilspie/*
 
-# File Manager - pcmanfm
-!.config/pcmanfm/
-!.config/pcmanfm/default/
-!.config/pcmanfm/default/pcmanfm.conf
-
-# File Manager - thunar
-!.config/Thunar/
-!.config/Thunar/*
-
-
 # PAM ENV
 !.pam_environment
 
 #
+# File Manager
+#
+
+# PcManFM
+!.config/pcmanfm/
+!.config/pcmanfm/default/
+!.config/pcmanfm/default/pcmanfm.conf
+
+# Thunar
+!.config/Thunar/
+!.config/Thunar/*
+
+# Ranger
+!.config/ranger/
+!.config/ranger/rc.conf
+!.config/ranger/scope.sh
+
+#
 # Terminal
 #
+
+# X resources - mainly for urxvt
+!.Xresources
 
 # Konsole/Yakuake
 !.config/konsolerc
@@ -112,9 +123,6 @@
 # xfce4-terminal
 !.config/xfce4/terminal/
 !.config/xfce4/terminal/*
-
-# X resources - mainly for urxvt
-!.Xresources
 
 #
 # Media
