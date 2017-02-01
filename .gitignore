@@ -121,6 +121,7 @@
 #
 
 # X resources - mainly for urxvt
+!.Xdefaults
 !.Xresources
 
 # Konsole/Yakuake
