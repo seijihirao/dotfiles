@@ -1,0 +1,80 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.7,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 1 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.4,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 458,
+                       "width": 802,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Terminal",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       "window_role": "^media\\-file\\-manager$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 369,
+               "width": 800,
+               "x": 688,
+               "y": 29
+            },
+            "name": "Deluge",
+            "percent": 0.6,
+            "swallows": [
+               {
+               "title": "^Deluge$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 574,
+       "width": 558,
+       "x": 404,
+       "y": 97
+    },
+    "name": "Trackma-gtk 0.6.2 [Anilist (anime)]",
+    "percent": 0.3,
+    "swallows": [
+       {
+       "class": "^Trackma\\-gtk$"
+       }
+    ],
+    "type": "con"
+}
+

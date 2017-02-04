@@ -97,6 +97,7 @@
 
 !.config/i3/
 !.config/i3/config
+!.config/i3/workspace*
 
 #
 # File Manager

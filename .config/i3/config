@@ -5,6 +5,11 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+####################################################
+# KEYBOARD
+####################################################
+
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -15,32 +20,22 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym Mod1+F4 kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+Shift+space exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+space exec rofi -show run -lines 3 -bw 1 -font "Cantarell 18" -opacity "75" 
 
 # change focus
 bindsym $mod+j focus left
@@ -76,15 +71,15 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -93,35 +88,36 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+bindsym $mod+d workspace $wsNull
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym Control+Mod1+Delete exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -149,8 +145,142 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#
+# System
+#
+
+#Power options
+set $sysmenu "system:  [r]eload  [l]ogout  [p]oweroff  re[b]oot  [s]uspend loc[k]"
+bindsym $mod+Delete      mode $sysmenu
+
+mode $sysmenu {
+    bindsym r         restart
+    bindsym l         exit
+    bindsym p         exec shutdown -P now
+    bindsym b         exec shutdown -r now
+    bindsym s	      exec systemctl suspend
+    bindsym k         exec i3lock --color 475263 
+    bindsym Return    mode "default"
+    bindsym Escape    mode "default"
+}
+
+#volume control
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
+#
+# Apps
+#
+
+bindsym $mod+c exec speedcrunch
+bindsym $mod+b exec firefox-aurora
+bindsym $mod+i exec visual-studio-code-oss
+bindsym $mod+n exec xfce4-terminal --hide-menubar --role=cmus -e cmus
+bindsym $mod+e exec xfce4-terminal --hide-menubar --role=ranger -e ranger
+
+bindsym Control+Shift+2 exec puush -c -w
+bindsym Control+Shift+3 exec puush -c -f
+bindsym Control+Shift+4 exec puush -c -a
+
+####################################################
+# MOUSE
+####################################################
+exec --no-startup-id synclient VertEdgeScroll=1 TapButton1=1 TapButton2=1 TapButton3=1
+
+####################################################
+# WINDOWS
+####################################################
+
+set $ws1 "1: web"
+set $ws2 "2: code"
+set $ws3 "3: media"
+set $ws4 4
+set $ws5 5
+set $ws6 6
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 "10: terminal"
+set $wsNull desktop
+
+#Define colors used
+set $bg-color       #333333
+set $i-bg-color     #333333
+set $u-bg-color     #993333
+set $border-color   #2255AA
+set $i-border-color #666666
+set $text-color     #ffffff
+set $i-text-color   #cecece
+
+#Windows          Border            Background  Text            Indicator
+#client.focused    $border-color     $bg-color   $text-color     $border-color
+#client.unfocused  $i-border-color   $i-bg-color $i-text-color   $i-border-color
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+# Status Bar
 bar {
-        status_command i3status
+	position top
+	status_command i3status
+  	#status_command i3blocks -c /home/magnus/.config/i3/i3blocks.conf
+	colors {
+		background $bg-color
+	    	separator #757575
+		#                  border             background         text
+		focused_workspace  $border-color      $bg-color           $text-color
+		inactive_workspace $i-border-color      $i-bg-color         $i-text-color
+		urgent_workspace   $u-bg-color      $u-bg-color         $text-color
+	}
 }
+
+#i3 gaps
+for_window [class="^.*"] border pixel 2
+gaps inner 10
+gaps outer 0
+smart_gaps on
+smart_borders on
+
+for_window [window_role="pop-up"] floating enable;border normal
+for_window [window_role="task_dialog"] floating enable;border normal
+
+####################################################
+# APPS
+####################################################
+
+#Open applications on specific workspaces
+assign [class="Firefox"] $ws1
+assign [class="Code - OSS"] $ws2
+assign [class="mpv"] $ws3
+assign [class="Trackma-gtk"] $ws3
+assign [class="Deluge"] $ws3
+#assign [class="xfce4-terminal"] $ws10
+
+#Autostarted application
+exec --no-startup-id nm-applet
+exec --no-startup-id pa-applet
+exec --no-startup-id variety
+exec --no-startup-id compton -f
+
+#Workspace 1: Web
+exec --no-startup-id "i3-msg 'workspace \"1: web\"; append_layout ~/.config/i3/workspace-1.json'"
+exec --no-startup-id firefox-aurora
+
+#Workspace 3: Media
+exec --no-startup-id "i3-msg 'workspace \"3: media\"; append_layout ~/.config/i3/workspace-3.json'"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
+exec --no-startup-id deluge-gtk
+exec --no-startup-id trackma-gtk
+
+#Workspace 10: Terminal
+exec --no-startup-id "i3-msg 'workspace \"10: terminal\"; append_layout ~/.config/i3/workspace-10.json'"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
+
+
+
+#exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+#exec --no-startup-id conky
+#exec --no-startup-id compton -f
+#exec --no-startup-id .config/conky/start_conky
