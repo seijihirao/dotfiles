@@ -29,6 +29,10 @@
 
 # README
 !README.md
+!.local/share/screenshots/
+!.local/share/screenshots/preview/
+!.local/share/screenshots/preview/*
+!.local/share/screenshots/preview/**/*
 
 #
 # Environment
