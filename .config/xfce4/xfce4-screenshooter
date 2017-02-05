@@ -1,8 +1,8 @@
 delay=0
-region=1
+region=2
 action=1
 show_mouse=0
-screenshot_dir=file:/home/seiji/Downloads
-app=eog
+screenshot_dir=file:///home/seiji/.local/share/screenshots
+app=none
 last_user=
 
