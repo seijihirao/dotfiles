@@ -97,7 +97,10 @@
 
 !.config/i3/
 !.config/i3/config
+!.config/i3/i3blocks.conf
 !.config/i3/workspace*
+!.config/i3/scripts/
+!.config/i3/scripts/*
 
 #
 # File Manager

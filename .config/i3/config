@@ -18,7 +18,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:DejaVu Sans Mono, Icons 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -192,16 +192,16 @@ exec --no-startup-id synclient VertEdgeScroll=1 TapButton1=1 TapButton2=1 TapBut
 # WINDOWS
 ####################################################
 
-set $ws1 "1: web"
-set $ws2 "2: code"
-set $ws3 "3: media"
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
-set $ws9 9
-set $ws10 "10: terminal"
+set $ws1 "1:"
+set $ws2 "2:¶"
+set $ws3 "3:►"
+set $ws4 "4:∮"
+set $ws5 "5:⚅"
+set $ws6 "6:?"
+set $ws7 "7:?"
+set $ws8 "8:?"
+set $ws9 "9:⑨"
+set $ws10 "10:☠"
 set $wsNull desktop
 
 #Define colors used
@@ -222,8 +222,10 @@ set $i-text-color   #cecece
 # Status Bar
 bar {
 	position top
-	status_command i3status
-  	#status_command i3blocks -c /home/magnus/.config/i3/i3blocks.conf
+	#status_command i3status
+  	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+
+    strip_workspace_numbers yes
 	colors {
 		background $bg-color
 	    	separator #757575
@@ -253,7 +255,7 @@ assign [class="Firefox"] $ws1
 assign [class="Code - OSS"] $ws2
 assign [class="mpv"] $ws3
 assign [class="Trackma-gtk"] $ws3
-assign [class="Deluge"] $ws3
+assign [title="Deluge"] $ws3
 #assign [class="xfce4-terminal"] $ws10
 
 #Autostarted application
@@ -263,24 +265,21 @@ exec --no-startup-id variety
 exec --no-startup-id compton -f
 
 #Workspace 1: Web
-exec --no-startup-id "i3-msg 'workspace \"1: web\"; append_layout ~/.config/i3/workspace-1.json'"
+exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspace-1.json'"
 exec --no-startup-id firefox-aurora
 
 #Workspace 3: Media
-exec --no-startup-id "i3-msg 'workspace \"3: media\"; append_layout ~/.config/i3/workspace-3.json'"
+exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspace-3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
 exec --no-startup-id deluge-gtk
 exec --no-startup-id trackma-gtk
 
 #Workspace 10: Terminal
-exec --no-startup-id "i3-msg 'workspace \"10: terminal\"; append_layout ~/.config/i3/workspace-10.json'"
+exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspace-10.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 
-
-
 #exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id conky
-#exec --no-startup-id compton -f
 #exec --no-startup-id .config/conky/start_conky
