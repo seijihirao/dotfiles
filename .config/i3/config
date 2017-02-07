@@ -159,9 +159,9 @@ mode $sysmenu {
 }
 
 #volume control
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -RTMIN+1 i3blocks
 
 #screenshot
 bindsym Print exec "xfce4-screenshooter -f -s ~/.local/share/screenshots/"
