@@ -27,7 +27,31 @@ WEATHER_INFO=$(curl -s "http://api.openweathermap.org/data/2.5/weather?lat=${LAT
 WEATHER_MAIN=$(echo "${WEATHER_INFO}" | grep -o -e '\"main\":\"[a-Z]*\"' | awk -F ':' '{print $2}' | tr -d '"')
 WEATHER_TEMP=$(echo "${WEATHER_INFO}" | grep -o -e '\"temp\":\-\?[0-9]*' | awk -F ':' '{print $2}' | tr -d '"')
 
-echo "${WEATHER_TEMP}${SYMBOL_CELSIUS}"
+if [[ "${WEATHER_MAIN}" = *Snow* ]]; then
+  echo "${ICON_SNOW}"
+  echo "${ICON_SNOW}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Rain* ]] || [[ "${WEATHER_MAIN}" = *Drizzle* ]]; then
+  echo "${ICON_RAINY}"
+  echo "${ICON_RAINY}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Cloud* ]]; then
+  echo "${ICON_CLOUDY}"
+  echo "${ICON_CLOUDY}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Clear* ]]; then
+  echo "${ICON_SUNNY}"
+  echo "${ICON_SUNNY}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Fog* ]] || [[ "${WEATHER_MAIN}" = *Mist* ]]; then
+  echo "${ICON_FOG}"
+  echo "${ICON_FOG}"
+  echo ""
+else
+  echo "${WEATHER_MAIN}"
+  echo "${WEATHER_MAIN}"
+  echo ""
+fi
 
 if [[ "${WEATHER_TEMP}" -lt "${URGENT_LOWER}" ]] || [[ "${WEATHER_TEMP}" -gt "${URGENT_HIGHER}" ]]; then
   exit 33
