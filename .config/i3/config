@@ -145,7 +145,7 @@ bindsym $mod+Shift+r restart
 
 #power options
 set $sysmenu "system:  [r]eload  [l]ogout  [p]oweroff  re[b]oot  [s]uspend loc[k]"
-bindsym Control+Mod1+Delete      mode $sysmenu
+bindsym Control+Mod1+Delete exec ~/.config/i3/scripts/sysmenu
 
 mode $sysmenu {
     bindsym r         restart
