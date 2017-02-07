@@ -26,6 +26,8 @@
 
 # Installed pacman apps
 !.config/.apps
+# Installed python libs
+!.config/.python-libs
 
 # README
 !README.md

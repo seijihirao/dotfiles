@@ -8,8 +8,11 @@ alsa-plugins
 alsa-utils
 apache
 apm
+appstream
+appstream-qt
 apr
 apr-util
+arandr
 archey3
 archlinux-keyring
 asciidoc
@@ -697,6 +700,7 @@ libthai
 libtheora
 libtiff
 libtirpc
+libtommath
 libtool
 libtorrent-rasterbar
 libtracker-sparql
@@ -770,6 +774,7 @@ libxxf86vm
 libyaml
 libzen
 libzip
+libzmf
 licenses
 lilv
 linux
@@ -1307,15 +1312,18 @@ xorg-server-common
 xorg-server-xwayland
 xorg-setxkbmap
 xorg-xauth
+xorg-xbacklight
 xorg-xdpyinfo
 xorg-xev
 xorg-xgamma
 xorg-xhost
 xorg-xinit
+xorg-xinput
 xorg-xkbcomp
 xorg-xmessage
 xorg-xmodmap
 xorg-xprop
+xorg-xrandr
 xorg-xrdb
 xorg-xset
 xorg-xsetroot
