@@ -12,6 +12,11 @@ alias free='free -h'                      # memory in human-readable sizes
 alias cp="cp -i"                          # confirm before overwriting something
 alias clipboard='xclip -selection clipboard' # copy to clipboard
 
+alias ls='ls --color=auto'
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+
 #
 # Programming
 #
