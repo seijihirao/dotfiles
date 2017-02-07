@@ -274,11 +274,15 @@ assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
 #assign [class="xfce4-terminal"] $ws10
 
+#
 #Autostarted application
+#
 exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id variety
 exec --no-startup-id compton -f
+
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 #Workspace 1: Web
 exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspace-1.json'"
