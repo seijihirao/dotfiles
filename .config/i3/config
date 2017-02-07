@@ -192,7 +192,7 @@ bindsym $mod+e exec xfce4-terminal --hide-menubar --role=ranger -e ranger
 ####################################################
 # MOUSE
 ####################################################
-exec --no-startup-id synclient VertEdgeScroll=1 TapButton1=1 TapButton2=1 TapButton3=1
+exec --no-startup-id synclient PalmDetect=1 VertTwoFingerScroll=1 HorizTwoFingerScroll=1 TapButton1=1 TapButton2=3 TapButton3=2
 
 ####################################################
 # WINDOWS
