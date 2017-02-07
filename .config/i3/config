@@ -163,6 +163,16 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute && pkill -RTMI
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute && pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -RTMIN+1 i3blocks
 
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 #screenshot
 bindsym Print exec "xfce4-screenshooter -f -s ~/.local/share/screenshots/"
 bindsym Shift+Print exec "xfce4-screenshooter -w -s ~/.local/share/screenshots/"
