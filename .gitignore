@@ -36,6 +36,9 @@
 !.local/share/screenshots/preview/*
 !.local/share/screenshots/preview/**/*
 
+# LICENSE
+!LICENSE.txt
+
 #
 # Environment
 #
