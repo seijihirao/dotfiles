@@ -1,5 +1,9 @@
 #!/bin/bash
 
-# NVM
-export NVM_DIR="/home/seiji/.config/programming/node/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" &  # This loads nvm
+# NPM
+export NPM_CONFIG_PREFIX=~/.config/programming/npm
+export PATH=$PATH:~/.config/programming/npm/bin
+
+# N - version manager
+export N_PREFIX=~/.config/programming/n
+
