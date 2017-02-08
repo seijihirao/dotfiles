@@ -190,9 +190,13 @@ bindsym Control+Shift+4 exec puush -c -a
 # bindsym $mod+Shift+space exec dmenu_run
 bindsym $mod+space exec rofi -show run -lines 3 -bw 1 -font "Cantarell 18" -opacity "75" 
 
+# task manager
+bindsym Control+Shift+Escape exec xfce4-taskmanager
+
 # start a terminal
 bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
 
+# apps
 bindsym $mod+c exec speedcrunch
 bindsym $mod+b exec firefox-aurora
 bindsym $mod+i exec visual-studio-code-oss
@@ -311,7 +315,3 @@ exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/w
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
-
-#exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-#exec --no-startup-id conky
-#exec --no-startup-id .config/conky/start_conky
