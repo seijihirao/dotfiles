@@ -300,15 +300,15 @@ exec --no-startup-id trackma-gtk
 
 #Workspace 10: Cirno
 exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspace-9.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-4"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-5"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-6"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-7"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-4" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id viewer ~/.local/share/wallpapers/9.png
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-6" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-7" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config"
 
 #Workspace 10: Terminal
 exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspace-10.json'"
