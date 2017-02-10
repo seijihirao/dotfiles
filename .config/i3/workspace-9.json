@@ -104,11 +104,11 @@
                "x": 0,
                "y": 0
             },
-            "name": "Terminal - seiji@Seiji-PC:/home/seiji",
+            "name": "Background - 9",
             "percent": 0.333333333333333,
             "swallows": [
                {
-               "title": "/home/seiji/.local/share/wallpapers/9.png"
+                "title": "^cirno-5$"
                }
             ],
             "type": "con"

@@ -61,7 +61,8 @@
 !.local/share/wallpapers/
 !.local/share/wallpapers/min/
 !.local/share/wallpapers/min/*
-!.local/share/wallpapers/9.png
+!.local/share/wallpapers/9/
+!.local/share/wallpapers/9/*
 
 !.config/variety/
 !.config/variety/variety.conf

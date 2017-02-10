@@ -304,11 +304,11 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-wo
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-4" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id viewer ~/.local/share/wallpapers/9.png
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-6" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-7" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 #Workspace 10: Terminal
 exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspace-10.json'"
