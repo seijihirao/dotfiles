@@ -1,0 +1,44 @@
+!|                  FONTS
+!|===============================================
+
+URxvt.font:     xft:bitstream vera sans mono:size=11:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=11:antialias=true
+
+!|              COLOR - PASTELS
+!|===============================================
+URxvt.background: #404040
+URxvt.foreground: #D3D2D3
+URxvt.color0: #000000
+URxvt.color1: #FF7768
+URxvt.color2: #ABFA68
+URxvt.color3: #FFFD88
+URxvt.color4: #98D0FE
+URxvt.color5: #FF85FD
+URxvt.color6: #CACBFE
+URxvt.color7: #EFEFEF
+URxvt.color8: #848484
+URxvt.color9: #FFBCB5
+URxvt.color10: #AFFF8F
+URxvt.color11: #FFFDD0
+URxvt.color12: #BADFFF
+URxvt.color13: #FFA9FE
+URxvt.color14: #E2E3FE
+URxvt.color15: #FFFFFF
+URxvt.scrollBar: false
+
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: argb: DD273238, argb: DD273238, argb: DD1E2529
+rofi.color-normal: argb: 00000000, argb: DDC4CBD4, argb: 96404552, argb: DD4084d6, argb: DDF9F9F9
+rofi.color-active: argb: DD273238, argb: DD80cbc4, argb: DD273238, argb: DD394249, argb: DD80cbc4
+rofi.color-urgent: argb: FF273238, argb: FFFF1844, argb: FF273238, argb: FF394249, argb: FFFF1844
+rofi.bw: 1
+rofi.location: 0
+rofi.padding: 5
+rofi.font: Cantarell 18
+
+rofi.case-sensitive: false
+
+rofi.kb-cancel: Escape,Control+bracketleft
+

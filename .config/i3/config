@@ -281,12 +281,20 @@ assign [title="Deluge"] $ws3
 #
 #Autostarted application
 #
-exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet
-exec --no-startup-id variety
+
+#Xresources
+exec xrdb -merge ~/.Xresources
+
+#Composite Manager
 exec --no-startup-id compton -f
 
+#Gnome interfaces
+exec --no-startup-id nm-applet
+exec --no-startup-id pa-applet
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+#Wallpapers
+exec --no-startup-id variety
 
 #Workspace 1: Web
 exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspace-1.json'"
