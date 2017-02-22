@@ -188,7 +188,7 @@ bindsym Control+Shift+4 exec puush -c -a
 
 # start dmenu (a program launcher)
 # bindsym $mod+Shift+space exec dmenu_run
-bindsym $mod+space exec rofi -show run -lines 3 -bw 1 -font "Cantarell 18" -opacity "75" 
+bindsym $mod+space exec rofi -show run -lines 3 
 
 # task manager
 bindsym Control+Shift+Escape exec xfce4-taskmanager
@@ -310,12 +310,12 @@ exec --no-startup-id trackma-gtk
 exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspace-9.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config/bash"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-4" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-6" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-7" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config/i3"
 exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 #Workspace 10: Terminal
