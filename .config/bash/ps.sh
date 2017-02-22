@@ -3,13 +3,13 @@
 #
 # COLORS
 #
-RESET="\[\e[0m\]"
-BOLD="\[\e[1m\]"
+RESET="\[$(tput sgr0)\]"
+BOLD="\[$(tput bold)\]"
 
-GREEN="\[\e[32m\]"
-YELLOW="\[\e[33m\]"
-BLUE="\[\e[34m\]"
-WHITE="\[\e[39m\]"
+GREEN="\[$(tput setaf 2)\]"
+YELLOW="\[$(tput setaf 3)\]"
+BLUE="\[$(tput setaf 4)\]"
+WHITE="\[$(tput setaf 7)\]"
 
 #
 # GIT
