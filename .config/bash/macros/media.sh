@@ -5,8 +5,10 @@
 # Adds Cover art for all music files
 add-cover(){
 
-    GREEN='\033[0;32m'
-    RESET="$(tput sgr0)"
+    RESET="\[$(tput sgr0)\]"
+    BOLD="\[$(tput bold)\]"
+
+    GREEN="\[$(tput setaf 2)\]"
 
     for img in ./cover.*; do
 
