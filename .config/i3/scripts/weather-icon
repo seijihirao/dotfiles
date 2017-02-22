@@ -47,6 +47,10 @@ elif [[ "${WEATHER_MAIN}" = *Fog* ]] || [[ "${WEATHER_MAIN}" = *Mist* ]]; then
   echo "${ICON_FOG}"
   echo "${ICON_FOG}"
   echo ""
+elif [[ "${WEATHER_MAIN}" = *Thunderstorm* ]]; then
+  echo "${ICON_STORM}"
+  echo "${ICON_STORM}"
+  echo ""
 else
   echo "${WEATHER_MAIN}"
   echo "${WEATHER_MAIN}"
