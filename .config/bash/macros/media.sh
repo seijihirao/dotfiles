@@ -5,10 +5,10 @@
 # Adds Cover art for all music files
 add-cover(){
 
-    RESET="\[$(tput sgr0)\]"
-    BOLD="\[$(tput bold)\]"
+    RESET="\e[0m"
+    BOLD="\e[1m"
 
-    GREEN="\[$(tput setaf 2)\]"
+    GREEN="\e[32m"
 
     for img in ./cover.*; do
 
@@ -28,7 +28,7 @@ add-cover(){
         fi
         
         total_files=$(($flac_files + $mp3_files))
-        printf "${GREEN}Cover successfullt added to ${total_files} files${RESET}\n"
+        echo -e "${GREEN}Cover successfullt added to ${total_files} files${RESET}\n"
         
     done
 }
