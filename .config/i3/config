@@ -215,9 +215,9 @@ exec --no-startup-id synclient PalmDetect=1 VertTwoFingerScroll=1 HorizTwoFinger
 set $ws1 "1:"
 set $ws2 "2:¶"
 set $ws3 "3:►"
-set $ws4 "4:∮"
-set $ws5 "5:⚅"
-set $ws6 "6:?"
+set $ws4 "4:♪"
+set $ws5 "5:∮"
+set $ws6 "6:⚅"
 set $ws7 "7:?"
 set $ws8 "8:?"
 set $ws9 "9:⑨"
@@ -297,17 +297,23 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id variety
 
 #Workspace 1: Web
-exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspace-1.json'"
+exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspaces/1.json'"
 exec --no-startup-id firefox-aurora
 
 #Workspace 3: Media
-exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspace-3.json'"
+exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspaces/3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
 exec --no-startup-id deluge-gtk
 exec --no-startup-id trackma-gtk
 
+#Workspace 4: Songs
+exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
+exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
+exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-volume" -e alsamixer
+
 #Workspace 10: Cirno
-exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspace-9.json'"
+exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspaces/9.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config/bash"
@@ -319,7 +325,7 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-wo
 exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 #Workspace 10: Terminal
-exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspace-10.json'"
+exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspaces/10.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
