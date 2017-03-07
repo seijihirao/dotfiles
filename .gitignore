@@ -169,6 +169,10 @@
 !.config/deadbeef/
 !.config/deadbeef/config
 
+# Sound - Cava
+!.config/cava/
+!.config/cava/config
+
 # Anime
 !.trackma/
 !.trackma/*.json
