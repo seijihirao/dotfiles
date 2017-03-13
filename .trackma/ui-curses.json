@@ -1,0 +1,93 @@
+{
+    "keymap": {
+        "addsearch": "a",
+        "altname": "A",
+        "delete": "d",
+        "details": "enter",
+        "details_exit": "esc",
+        "help": "f1",
+        "neweps": "N",
+        "next_filter": "right",
+        "open_web": "O",
+        "play": "f5",
+        "prev_filter": "left",
+        "quit": "f12",
+        "reload": "c",
+        "retrieve": "R",
+        "score": "f7",
+        "search": "/",
+        "send": "s",
+        "sort": "f3",
+        "sort_order": "r",
+        "status": "f6",
+        "switch_account": "f9",
+        "update": "f4"
+    },
+    "palette": {
+        "body": [
+            "",
+            ""
+        ],
+        "button": [
+            "black",
+            "light gray"
+        ],
+        "button hilight": [
+            "white",
+            "dark red"
+        ],
+        "error": [
+            "light red",
+            "dark blue"
+        ],
+        "focus": [
+            "standout",
+            ""
+        ],
+        "head": [
+            "light red",
+            "black"
+        ],
+        "header": [
+            "bold",
+            ""
+        ],
+        "info_section": [
+            "dark blue",
+            ""
+        ],
+        "info_title": [
+            "light red",
+            ""
+        ],
+        "item_airing": [
+            "dark blue",
+            ""
+        ],
+        "item_neweps": [
+            "light blue",
+            ""
+        ],
+        "item_notaired": [
+            "yellow",
+            ""
+        ],
+        "item_playing": [
+            "white",
+            "dark blue"
+        ],
+        "item_updated": [
+            "white",
+            "dark green"
+        ],
+        "status": [
+            "white",
+            "black"
+        ],
+        "window": [
+            "white",
+            "black"
+        ]
+    },
+    "show_help": true
+}

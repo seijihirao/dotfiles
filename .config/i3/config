@@ -304,25 +304,25 @@ exec --no-startup-id firefox-aurora
 exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspaces/3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
 exec --no-startup-id deluge-gtk
-exec --no-startup-id trackma-gtk
+exec --no-startup-id xfce4-terminal --hide-menubar --role="media-anime-manager" -e trackma-curses
 
 #Workspace 4: Songs
-exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
-exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
-exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-volume" -e alsamixer
+#exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-volume" -e alsamixer
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
 
-#Workspace 10: Cirno
-exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspaces/9.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config/bash"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-4" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-6" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-7" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8" --default-working-directory="/home/seiji/.config"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config/i3"
-exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
+#Workspace 9: Cirno
+#exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspaces/9.json'"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config/bash"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-4" --default-working-directory="/home/seiji/.config"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-6" --default-working-directory="/home/seiji/.config"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-7" --default-working-directory="/home/seiji/.config"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8" --default-working-directory="/home/seiji/.config"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config/i3"
+#exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 #Workspace 10: Terminal
 exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspaces/10.json'"
