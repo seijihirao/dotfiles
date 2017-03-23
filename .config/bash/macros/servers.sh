@@ -31,7 +31,7 @@ sshfs-mfab(){
 # Bacchan
 #
 
-ssh-mfab(){
+ssh-ba(){
     ssh-gen ${USER} 192.168.1.10
 }
 
