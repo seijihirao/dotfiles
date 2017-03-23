@@ -228,7 +228,7 @@ set $wsNull desktop
 set $bg-color       #333333
 set $i-bg-color     #333333
 set $u-bg-color     #993333
-set $border-color   #2255AA
+set $border-color   #5588AA
 set $i-border-color #666666
 set $text-color     #ffffff
 set $i-text-color   #cecece
@@ -249,10 +249,10 @@ bar {
 	colors {
 		background $bg-color
 	    	separator #757575
-		#                  border             background         text
-		focused_workspace  $border-color      $bg-color           $text-color
+		#                  border               background          text
+		focused_workspace  $border-color        $bg-color           $text-color
 		inactive_workspace $i-border-color      $i-bg-color         $i-text-color
-		urgent_workspace   $u-bg-color      $u-bg-color         $text-color
+		urgent_workspace   $u-bg-color          $u-bg-color         $text-color
 	}
 }
 
