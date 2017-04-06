@@ -159,8 +159,8 @@ mode $sysmenu {
 }
 
 #volume control
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2%+ unmute && pkill -RTMIN+1 i3blocks 
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2%- unmute && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioRaiseVolume exec amixer -q -M set Master 5%+ unmute && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioLowerVolume exec amixer -q -M set Master 5%- unmute && pkill -RTMIN+1 i3blocks 
 bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -RTMIN+1 i3blocks
 
 # Sreen brightness controls
@@ -188,7 +188,7 @@ bindsym Control+Shift+4 exec puush -c -a
 
 # start dmenu (a program launcher)
 # bindsym $mod+Shift+space exec dmenu_run
-bindsym $mod+space exec rofi -show run -lines 3 
+bindsym $mod+space exec rofi -fullscreen -show run -lines 3 
 
 # task manager
 bindsym Control+Shift+Escape exec xfce4-taskmanager
