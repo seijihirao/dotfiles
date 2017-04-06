@@ -152,6 +152,17 @@
 !.config/xfce4/terminal/*
 
 #
+# Powerline
+#
+!.config/powerline/
+!.config/powerline/*
+!.config/powerline/themes/
+!.config/powerline/themes/*
+!.config/powerline/themes/**/*
+!.config/powerline/colorschemes/
+!.config/powerline/colorschemes/**/*
+
+#
 # Media
 #
 

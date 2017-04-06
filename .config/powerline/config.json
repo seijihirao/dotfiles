@@ -1,0 +1,11 @@
+{
+    "common": {
+        "term_escape_style": "xterm"
+    },
+    "ext": {
+        "shell": {
+            "theme": "default",
+            "colorscheme": "default"
+        }
+    }
+}
