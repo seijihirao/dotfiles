@@ -24,7 +24,7 @@ ssh-mfab(){
 }
 
 sshfs-mfab(){
-    sshfs-gen mfab root@192.168.1.113:/media
+    sshfs-gen mfab mfab@192.168.1.113:/media
 }
 
 #
