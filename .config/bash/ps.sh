@@ -10,6 +10,8 @@ BLACK="$(tput setaf 0)"
 GREEN="$(tput setaf 2)"
 YELLOW="$(tput setaf 3)"
 BLUE="$(tput setaf 4)"
+PINK="$(tput setaf 5)"
+CYAN="$(tput setaf 6)"
 WHITE="$(tput setaf 7)"
 
 BG_WHITE="$(tput setab 7)"
@@ -29,9 +31,24 @@ export GIT_PS1_SHOWUPSTREAM=1
 # PS
 #
 update-ps() {
+    # Git
+    local PS_GIT="\[${GREEN}\]$(__git_ps1 '(%s)')"
+
+    # Python Virtual Environment
+    if [ -z ${VIRTUAL_ENV} ]; then
+        local PS_VENV=""
+    else
+        local PS_VENV="\[${CYAN}\][$(basename "${VIRTUAL_ENV}")]"
+    fi
+    
+    # System
+    local PS_SYSTEM="\[${BLUE}\][\u@\h \[${WHITE}\]\W\[${BLUE}\]]"
+
+    PS1="\[${BOLD}\]${PS_GIT}${PS_VENV}${PS_SYSTEM}\$\[${RESET}\] "
+    PS2="\[${BOLD}${BLUE}\]\$\[${RESET}\] "
+
+    #powerline (not using because of non-printable characters bug)
     #PS1="$(powerline shell aboveleft)"
-    PS1="\[${BOLD}${GREEN}\]$(__git_ps1 '(%s)')\[${BLUE}\][\u@\h \[${WHITE}\]\W\[${BLUE}\]]\$\[${RESET}\] "
     #PS2="$(powerline shell left)"
-    PS2="\[${BOLD}${BLUE}\]>\[${RESET}\] "
 }
 PROMPT_COMMAND="update-ps;$PROMPT_COMMAND"
