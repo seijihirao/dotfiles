@@ -29,9 +29,9 @@ export GIT_PS1_SHOWUPSTREAM=1
 # PS
 #
 update-ps() {
-    export PS1="$(powerline shell aboveleft)"
-    #export PS1="\[${BOLD}${BG_WHITE}${BLACK}\]$(__git_ps1 ' %s ')\[${RESET}${BOLD}${BG_BLUE}${WHITE}\][\u@\h \[${WHITE}\]\W\[${BLUE}\]]\$\[${RESET}\] "
-    export PS2="$(powerline shell left)"
-    #export PS2="\[${BOLD}${BLUE}\]>\[${RESET}\] "
+    #PS1="$(powerline shell aboveleft)"
+    PS1="\[${BOLD}${GREEN}\]$(__git_ps1 '(%s)')\[${BLUE}\][\u@\h \[${WHITE}\]\W\[${BLUE}\]]\$\[${RESET}\] "
+    #PS2="$(powerline shell left)"
+    PS2="\[${BOLD}${BLUE}\]>\[${RESET}\] "
 }
-export PROMPT_COMMAND="update-ps;$PROMPT_COMMAND"
+PROMPT_COMMAND="update-ps;$PROMPT_COMMAND"
