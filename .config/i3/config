@@ -69,6 +69,7 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+bindsym $mod+Control+space mode_toggle
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -76,11 +77,23 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+ccedilla move right
 
-# alternatively, you can use the cursor keys:
+# move focused window (vim style)
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# move focused workspace
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Down move workspace to output down
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Right move workspace to output right
+
+# move focused workspace (vim style)
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+k move workspace to output down
+bindsym $mod+Control+l move workspace to output up
+bindsym $mod+Control+ccedilla move workspace to output right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -111,25 +124,40 @@ bindsym $mod+a focus parent
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
+        
+        bindsym j resize grow left 10 px or 10 ppt
+        bindsym k resize grow down 10 px or 10 ppt
+        bindsym l resize grow up 10 px or 10 ppt
+        bindsym ccedilla resize grow right 10 px or 10 ppt
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym ccedilla resize grow width 10 px or 10 ppt
+        bindsym Shift+j resize shrink left 10 px or 10 ppt
+        bindsym Shift+k resize shrink down 10 px or 10 ppt
+        bindsym Shift+l resize shrink up 10 px or 10 ppt
+        bindsym Shift+ccedilla resize shrink right 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize grow left 10 px or 10 ppt
+        bindsym Down resize grow down 10 px or 10 ppt
+        bindsym Up resize grow up 10 px or 10 ppt
+        bindsym Right resize grow right 10 px or 10 ppt
+
+        bindsym Shift+Left resize shrink left 10 px or 10 ppt
+        bindsym Shift+Down resize shrink down 10 px or 10 ppt
+        bindsym Shift+Up resize shrink up 10 px or 10 ppt
+        bindsym Shift+Right resize shrink right 10 px or 10 ppt
+
+        # float on right edge
+        bindsym Control+Right sticky enable; floating enable; border none; resize set 480 270; move absolute position 886 498;
+        bindsym Control+Shift+Right sticky disable; floating enable; border none; resize set 480 270; move absolute position 890 500;
+        
+        # float on left edge
+        bindsym Control+Left sticky enable; floating enable; border none; resize set 480 270; move absolute position 0 500;
+        bindsym Control+Shift+Left sticky enable; floating enable; border none; resize set 480 270; move absolute position 0 500;
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
+
 }
 
 bindsym $mod+r mode "resize"
@@ -152,7 +180,7 @@ mode $sysmenu {
     bindsym l         exit
     bindsym p         exec shutdown -P now
     bindsym b         exec shutdown -r now
-    bindsym s	      exec systemctl suspend
+    bindsym s         exec systemctl suspend
     bindsym k         exec i3lock --color 475263 
     bindsym Return    mode "default"
     bindsym Escape    mode "default"
@@ -241,19 +269,19 @@ set $i-text-color   #cecece
 # finds out, if available)
 # Status Bar
 bar {
-	position top
-	#status_command i3status
-  	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+    position top
+    #status_command i3status
+    status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
     strip_workspace_numbers yes
-	colors {
-		background $bg-color
-	    	separator #757575
-		#                  border               background          text
-		focused_workspace  $border-color        $bg-color           $text-color
-		inactive_workspace $i-border-color      $i-bg-color         $i-text-color
-		urgent_workspace   $u-bg-color          $u-bg-color         $text-color
-	}
+    colors {
+        background $bg-color
+            separator #757575
+        #                  border               background          text
+        focused_workspace  $border-color        $bg-color           $text-color
+        inactive_workspace $i-border-color      $i-bg-color         $i-text-color
+        urgent_workspace   $u-bg-color          $u-bg-color         $text-color
+    }
 }
 
 #i3 gaps
@@ -286,7 +314,7 @@ assign [title="Deluge"] $ws3
 exec xrdb -merge ~/.Xresources
 
 #Composite Manager
-exec --no-startup-id compton -f
+exec --no-startup-id compton -cf
 
 #Gnome interfaces
 exec --no-startup-id nm-applet
