@@ -2,11 +2,15 @@
 {
     // Configure glob patterns for excluding files and folders.
     "files.exclude": {
+        // Web
+        "bower_components/": true,
         // Python
-        ".venv/**/*": true,
+        ".venv/": true,
         "*.pyc": true,
         "*.egg*": true,
-        "build/**/**": true
+        "build/": false,
+        // Node
+        "node_modules/": true
     }
 ,
 "git.confirmSync": false
