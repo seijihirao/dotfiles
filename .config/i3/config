@@ -217,6 +217,7 @@ bindsym Control+Shift+4 exec puush -c -a
 # start dmenu (a program launcher)
 # bindsym $mod+Shift+space exec dmenu_run
 bindsym $mod+space exec rofi -fullscreen -show run -lines 3 
+bindsym Super_R exec rofi -fullscreen -show run -lines 3 
 
 # task manager
 bindsym Control+Shift+Escape exec xfce4-taskmanager
