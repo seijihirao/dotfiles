@@ -237,6 +237,11 @@ bindsym $mod+e exec xfce4-terminal --hide-menubar --role=ranger -e ranger
 ####################################################
 exec --no-startup-id synclient PalmDetect=1 VertTwoFingerScroll=1 HorizTwoFingerScroll=1 TapButton1=1 TapButton2=3 TapButton3=2
 
+#
+# Nonsense
+#
+bindsym --whole-window $mod+button1 exec "sh -c 'cd Documents/fun/nonsense/; .venv/bin/python send_email.py'"
+
 ####################################################
 # WINDOWS
 ####################################################
