@@ -18,6 +18,7 @@
 !.bashrc
 !.bash_profile
 !.bash_logout
+!.inputrc
 
 !.config/bash/
 !.config/bash/*
