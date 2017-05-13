@@ -162,6 +162,33 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# update screens (extended, mirror, etc)
+mode "screen" {
+        # These bindings trigger as soon as you enter the screen mode
+        
+        bindsym j exec xrandr --output HDMI1 --auto --left-of eDP1 --output eDP1 --auto
+        bindsym k exec xrandr --output HDMI1 --auto --below eDP1 --output eDP1 --auto
+        bindsym l exec xrandr --output HDMI1 --auto --above eDP1 --output eDP1 --auto
+        bindsym ccedilla exec xrandr --output HDMI1 --auto --right-of eDP1 --output eDP1 --auto
+
+        # same bindings, but for the arrow keys
+        bindsym Left exec xrandr --output HDMI1 --auto --left-of eDP1 --output eDP1 --auto
+        bindsym Down exec xrandr --output HDMI1 --auto --below eDP1 --output eDP1 --auto
+        bindsym Up exec xrandr --output HDMI1 --auto --above eDP1 --output eDP1 --auto
+        bindsym Right exec xrandr --output HDMI1 --auto --right-of eDP1 --output eDP1 --auto
+        
+        # mirror
+        bindsym space exec xrandr --output HDMI1 --auto --same-as eDP1 --output eDP1 --auto
+        bindsym Delete exec xrandr --output HDMI1 --auto --output eDP1 --off
+        bindsym Shift+Delete exec xrandr --output HDMI1 --off --output eDP1 --auto
+        
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+p mode "screen"
+
 #
 # System
 #
