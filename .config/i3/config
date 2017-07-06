@@ -253,9 +253,10 @@ bindsym Control+Shift+Escape exec xfce4-taskmanager
 bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
 
 # apps
-bindsym $mod+c exec speedcrunch
+bindsym $mod+c exec octave --force-gui
 bindsym $mod+b exec firefox-aurora
 bindsym $mod+i exec visual-studio-code-oss
+bindsym $mod+Shift+i exec webstorm
 bindsym $mod+n exec xfce4-terminal --hide-menubar --role=cmus -e cmus
 bindsym $mod+e exec xfce4-terminal --hide-menubar --role=ranger -e ranger
 
@@ -263,11 +264,6 @@ bindsym $mod+e exec xfce4-terminal --hide-menubar --role=ranger -e ranger
 # MOUSE
 ####################################################
 exec --no-startup-id synclient PalmDetect=1 VertTwoFingerScroll=1 HorizTwoFingerScroll=1 TapButton1=1 TapButton2=3 TapButton3=2
-
-#
-# Nonsense
-#
-bindsym --whole-window $mod+button1 exec "sh -c 'cd Documents/fun/nonsense/; .venv/bin/python send_email.py'"
 
 ####################################################
 # WINDOWS
@@ -278,9 +274,9 @@ set $ws2 "2:¶"
 set $ws3 "3:►"
 set $ws4 "4:♪"
 set $ws5 "5:∮"
-set $ws6 "6:⚅"
+set $ws6 "6:☕"
 set $ws7 "7:?"
-set $ws8 "8:?"
+set $ws8 "8:⚅"
 set $ws9 "9:⑨"
 set $ws10 "10:☠"
 set $wsNull desktop
@@ -334,7 +330,8 @@ for_window [window_role="task_dialog"] floating enable;border normal
 #Open applications on specific workspaces
 assign [class="Firefox"] $ws1
 assign [class="Code - OSS"] $ws2
-assign [class="mpv"] $ws3
+assign [class="jetbrains-webstorm"] $ws2
+#assign [class="mpv"] $ws3
 assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
 #assign [class="xfce4-terminal"] $ws10
