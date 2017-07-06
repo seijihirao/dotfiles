@@ -3,16 +3,29 @@
 #
 
 ssh-gen(){
-    ssh "$1@$2"
+    local user=${1}
+    local host=${2}
+    local port=${3}
+    if [ -z "${port}" ]; then
+        ssh "${user}@${host}"
+    else
+        ssh "${user}@${host}" -p "${port}"
+    fi
 }
 
 sshfs-gen(){
-    dir="/media/$1/"
+    local dir="/media/${1}/"
+    local host=${2}
+    local port=${3}
     if [ ! -d "${dir}" ]; then
         mkdir "${dir}"
     fi
     chown "${USER}" "${dir}"
-    sshfs "$2" "${dir}"
+    if [ -z "${port}" ]; then
+        sshfs "${host}" "${dir}"
+    else
+        sshfs "${host}" "${dir}" -o "Port=${port}"
+    fi
 }
 
 #
@@ -20,11 +33,11 @@ sshfs-gen(){
 #
 
 ssh-mfab(){
-    ssh-gen mfab 192.168.1.113
+    ssh-gen mfab mfab
 }
 
 sshfs-mfab(){
-    sshfs-gen mfab mfab@192.168.1.113:/media
+    sshfs-gen mfab mfab@mfab:/media
 }
 
 #
@@ -32,9 +45,9 @@ sshfs-mfab(){
 #
 
 ssh-ba(){
-    ssh-gen ${USER} 192.168.1.10
+    ssh-gen ${USER} ba 2222
 }
 
 sshfs-ba(){
-    sshfs-gen ba 192.168.1.10:/media 
+    sshfs-gen ba ba:/media 2222
 }
