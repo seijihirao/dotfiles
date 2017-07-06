@@ -21,3 +21,8 @@ alias fgrep='fgrep --colour=auto'
 # Programming
 #
 alias emacs="emacs -nw"
+
+#
+# Utility
+#
+alias beep='paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
