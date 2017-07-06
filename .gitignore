@@ -24,6 +24,7 @@
 !.config/bash/*
 !.config/bash/*/
 !.config/bash/*/*
+.config/bash/personal
 
 # Installed pacman apps
 !.config/.apps
