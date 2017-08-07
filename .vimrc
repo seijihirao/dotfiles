@@ -44,6 +44,9 @@ Plugin 'tpope/vim-fugitive'         " git
 Plugin 'vim-airline/vim-airline'    " statusbar
 Plugin 'vim-airline/vim-airline-themes'
 
+" Commands
+Plugin 'terryma/vim-multiple-cursors'
+
 " Other
 Plugin 'scrooloose/nerdtree'        " filetree
 
