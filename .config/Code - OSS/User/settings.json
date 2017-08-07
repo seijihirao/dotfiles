@@ -13,5 +13,6 @@
         "node_modules/": true
     }
 ,
-"git.confirmSync": false
+"git.confirmSync": false,
+"files.autoSave": "afterDelay"
 }
