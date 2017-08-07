@@ -26,3 +26,4 @@ alias emacs="emacs -nw"
 # Utility
 #
 alias beep='paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
+alias listen-mic='pactl load-module module-loopback latency_msec=1'
