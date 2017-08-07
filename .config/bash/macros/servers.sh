@@ -33,11 +33,11 @@ sshfs-gen(){
 #
 
 ssh-mfab(){
-    ssh-gen mfab mfab
+    ssh-gen pi mfab
 }
 
 sshfs-mfab(){
-    sshfs-gen mfab mfab@mfab:/media
+    sshfs-gen mfab pi@mfab:/media
 }
 
 #
