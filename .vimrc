@@ -70,8 +70,8 @@ let g:airline_theme='papercolor'
 " Tabs
 map <C-t> :tabnew<CR>
 map <C-w> :tabclose<CR>
-map <C-RIGHT> :tabNext<CR>
-map <C-LEFT> :tabprevious<CR>
+map <tab> :tabNext<CR>
+map <S-tab> :tabprevious<CR>
 map <C-0> :tabfirst<CR>
 map <C-9> :tablast<CR>
 
