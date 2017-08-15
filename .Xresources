@@ -42,3 +42,7 @@ rofi.case-sensitive: false
 
 rofi.kb-cancel: Escape,Control+bracketleft
 
+! MISC
+!------------------------------------------------------------------------------
+
+Xcursor.size: 16
