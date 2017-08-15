@@ -367,8 +367,9 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="media-anime-manager" 
 #Workspace 4: Songs
 #exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
-#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-volume" -e alsamixer
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-file-manager" -e ranger
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spotify"
 
 #Workspace 9: Cirno
 #exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspaces/9.json'"
