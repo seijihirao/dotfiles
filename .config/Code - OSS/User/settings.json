@@ -10,7 +10,10 @@
         "*.egg*": true,
         "build/": false,
         // Node
-        "node_modules/": true
+        "node_modules/": true,
+        // Latex
+        "*.toc": true,
+        "*.aux": true
     }
 ,
 "git.confirmSync": false,
