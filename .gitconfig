@@ -5,5 +5,7 @@
 [core]
 	editor = vim
 	fileMode = false
-	excludesfile = /home/seiji/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	quotepath = false
+[push]
+	default = simple
