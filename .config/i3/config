@@ -354,28 +354,17 @@ exec --no-startup-id compton -cf
 
 #Gnome interfaces
 exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet
+#exec --no-startup-id pa-applet
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 #Wallpapers
 exec --no-startup-id variety
 
-#Workspace 1: Web
-exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspaces/1.json'"
-exec --no-startup-id firefox-aurora
-
-#Workspace 3: Media
-exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspaces/3.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
-exec --no-startup-id deluge-gtk
-exec --no-startup-id xfce4-terminal --hide-menubar --role="media-anime-manager" -e trackma-curses
-
-#Workspace 4: Songs
-#exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
-#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
-#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-file-manager" -e ranger
-#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
-#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spotify"
+#Workspace 10: Terminal
+exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspaces/10.json'"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 
 #Workspace 9: Cirno
 #exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspaces/9.json'"
@@ -389,8 +378,20 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="media-anime-manager" 
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config/i3"
 #exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
-#Workspace 10: Terminal
-exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspaces/10.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
-exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
+#Workspace 4: Songs
+#exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-file-manager" -e ranger
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spotify"
+
+#Workspace 3: Media
+exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspaces/3.json'"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
+exec --no-startup-id deluge-gtk
+exec --no-startup-id xfce4-terminal --hide-menubar --role="media-anime-manager" -e trackma-curses
+
+#Workspace 1: Web
+exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspaces/1.json'"
+exec --no-startup-id firefox-aurora
+
