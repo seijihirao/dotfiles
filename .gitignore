@@ -118,6 +118,15 @@
 !.config/i3/scripts/*
 
 #
+# Status Bar
+#
+
+# Polybar
+
+!.config/polybar
+!.config/polybar/config
+
+#
 # File Manager
 #
 
