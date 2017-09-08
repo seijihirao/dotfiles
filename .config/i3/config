@@ -256,12 +256,15 @@ bindsym Control+Shift+Escape exec xfce4-taskmanager
 bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
 
 # apps
-bindsym $mod+c exec octave --force-gui
+bindsym $mod+c exec xfce4-terminal --hide-menubar --role="octave" --default-working-directory=".local/octave/" -e "octave --no-gui"
 bindsym $mod+b exec firefox-aurora
+bindsym $mod+Control+b exec chromium
 bindsym $mod+i exec visual-studio-code-oss
-bindsym $mod+Shift+i exec webstorm
-bindsym $mod+n exec xfce4-terminal --hide-menubar --role=cmus -e cmus
+bindsym $mod+Control+i exec webstorm
+bindsym $mod+n exec spotify
+bindsym $mod+Control+n exec xfce4-terminal --hide-menubar --role=cmus -e cmus
 bindsym $mod+e exec xfce4-terminal --hide-menubar --role=ranger -e ranger
+bindsym $mod+Control+e exec pcmanfm
 
 ####################################################
 # MOUSE
