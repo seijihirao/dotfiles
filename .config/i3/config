@@ -232,9 +232,9 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #screenshot
-bindsym Print exec "xfce4-screenshooter -f -s ~/.local/share/screenshots/"
-bindsym Shift+Print exec "xfce4-screenshooter -w -s ~/.local/share/screenshots/"
-bindsym Control+Print exec "xfce4-screenshooter -r -s ~/.local/share/screenshots/"
+bindsym Print exec "xfce4-screenshooter -f -c -s ~/.local/share/screenshots/"
+bindsym Shift+Print exec "xfce4-screenshooter -w -c -s ~/.local/share/screenshots/"
+bindsym Control+Print exec "xfce4-screenshooter -r -c -s ~/.local/share/screenshots/"
 
 bindsym Control+Shift+2 exec puush -c -w
 bindsym Control+Shift+3 exec puush -c -f
