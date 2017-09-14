@@ -42,6 +42,10 @@ load-module module-switch-on-port-available
 #load-module module-null-sink
 #load-module module-pipe-sink
 
+
+### Bluetooth
+load-module module-switch-on-connect
+
 ### Automatically load driver modules depending on the hardware available
 .ifexists module-udev-detect.so
 load-module module-udev-detect
@@ -111,7 +115,7 @@ load-module module-always-sink
 load-module module-intended-roles
 
 ### Automatically suspend sinks/sources that become idle for too long
-load-module module-suspend-on-idle
+#load-module module-suspend-on-idle
 
 ### If autoexit on idle is enabled we want to make sure we only quit
 ### when no local session needs us anymore.
@@ -138,3 +142,4 @@ load-module module-filter-apply
 ### Load the integrated pulseaudio equalizer and dbus modules
 load-module module-equalizer-sink
 load-module module-dbus-protocol
+
