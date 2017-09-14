@@ -77,6 +77,15 @@
 !.devilspie
 !.devilspie/*
 
+# Status Bar
+
+!.config/polybar
+!.config/polybar/config
+
+# Composite Manager
+
+!.config/compton.conf
+
 # PAM ENV
 !.pam_environment
 
@@ -116,15 +125,6 @@
 !.config/i3/workspaces/*
 !.config/i3/scripts/
 !.config/i3/scripts/*
-
-#
-# Status Bar
-#
-
-# Polybar
-
-!.config/polybar
-!.config/polybar/config
 
 #
 # File Manager
