@@ -336,13 +336,12 @@ for_window [window_role="task_dialog"] floating enable;border normal
 ####################################################
 
 #Open applications on specific workspaces
-assign [class="Firefox"] $ws1
+assign [window_role="^browser$"] $ws1
 assign [class="Code - OSS"] $ws2
 assign [class="jetbrains-webstorm"] $ws2
-#assign [class="mpv"] $ws3
 assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
-#assign [class="xfce4-terminal"] $ws10
+for_window [class="Spotify"] move to workspace $ws4
 
 #
 #Autostarted application
