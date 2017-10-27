@@ -279,10 +279,10 @@ set $ws1 "1:"
 set $ws2 "2:¶"
 set $ws3 "3:►"
 set $ws4 "4:♪"
-set $ws5 "5:∮"
+set $ws5 "5:∞"
 set $ws6 "6:☕"
-set $ws7 "7:?"
-set $ws8 "8:⚅"
+set $ws7 "7:⚅"
+set $ws8 "8:✆"
 set $ws9 "9:⑨"
 set $ws10 "10:☠"
 set $wsNull desktop
@@ -342,6 +342,7 @@ assign [class="jetbrains-webstorm"] $ws2
 assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
 for_window [class="Spotify"] move to workspace $ws4
+assign [class="Slack"] $ws8
 
 #
 #Autostarted application
@@ -378,6 +379,11 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-8" --default-working-directory="/home/seiji/.config"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config/i3"
 #exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
+
+#Workspace 8: Chat
+exec --no-startup-id "i3-msg 'workspace \"8:✆\"; append_layout ~/.config/i3/workspaces/8.json'"
+exec --no-startup-id slack
+exec --no-startup-id thunderbird
 
 #Workspace 4: Songs
 #exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
