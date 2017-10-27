@@ -1,3 +1,11 @@
+
+/****************************************************
+ *
+ * Facebook
+ *
+ ****************************************************/
+
+
 /*
 // DUSKY GRAY FACEBOOK BY PIERO'NMU ////////////////////////////
 */
@@ -3112,4 +3120,90 @@ span.uiSearchInput::after
   {
     background-color: rgba(0, 0, 0, .5)!important;
   }
+}
+
+/****************************************************
+ *
+ * Horrible Subs
+ *
+ ****************************************************/
+
+@-moz-document domain("horriblesubs.info") {
+
+body,#wrapper {
+    padding: 0!important;
+    background: #222!important;
+}
+
+#header {
+    padding: 0!important;
+}
+
+#headerimg {
+    margin-bottom: 0!important;
+    border-radius: 5px;
+}
+
+body, h2, a {
+    color: white!important;
+}
+
+.release-info:hover, .release-links:hover, .ind-show:hover, .alpha-nav:hover {
+    background: none!important;
+}
+
+#access {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #ce2781;
+    box-shadow: 1px 1px 2px #222;
+    z-index: 9999;
+}
+
+/* Twitter */
+.menu-item-130418 {
+    background: #fe57a1!important;
+}
+
+#c1 {
+    background: none!important;
+}
+
+#t1c, #t1 {
+    color: white!important;
+}
+
+.announcement, .schedule-today, .highlighted-post .highlighted{
+    background-color: #ce2781!important;
+    border-radius: 4px 0 4px 0;
+}
+
+input {
+    border-bottom: 2px solid white!important;
+    color: white!important;
+    background: none!important;
+}
+
+}
+
+/****************************************************
+ *
+ * Horrible Subs
+ *
+ ****************************************************/
+
+@-moz-document domain("disqus.com") {
+
+.highlighted-post .highlighted {
+    background: none!important;
+}
+
+.textarea-wrapper, input[type="text"]{
+    background: none!important;
+    border: none!important;
+    border-bottom: 2px solid #dbdfe4!important;
+    border-radius: 0!important;
+}
+
 }
