@@ -51,3 +51,15 @@ ssh-ba(){
 sshfs-ba(){
     sshfs-gen ba ba:/media 2222
 }
+
+#
+# IC
+#
+
+ssh-ic(){
+    ssh-gen ra186837 ic.unicamp
+}
+
+sshfs-ic(){
+    sshfs-gen ic.unicamp ic.unicamp:/home/ec2016/ra186837/
+}
