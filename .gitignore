@@ -77,6 +77,10 @@
 !.devilspie
 !.devilspie/*
 
+# App Launcher
+!.config/rofi
+!.config/rofi/config
+
 # Status Bar
 
 !.config/polybar
