@@ -192,6 +192,40 @@ mode "screen" {
 
 bindsym $mod+p mode "screen"
 
+#volume control
+bindsym XF86AudioRaiseVolume exec amixer -q -M set Master 5%+ unmute && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioLowerVolume exec amixer -q -M set Master 5%- unmute && pkill -RTMIN+1 i3blocks 
+bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -RTMIN+1 i3blocks
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+#screenshot
+bindsym $mod+Print mode "screenshot"
+mode "screenshot" {
+    bindsym 3 exec "xfce4-screenshooter -f -c"; mode "default"
+    bindsym 2 exec "xfce4-screenshooter -w -c"; mode "default"
+    bindsym 1 exec "xfce4-screenshooter -r -c"; mode "default"
+    bindsym Shift+3 exec "xfce4-screenshooter -f -s ~/.local/share/screenshots/"; mode "default"
+    bindsym Shift+2 exec "xfce4-screenshooter -w -s ~/.local/share/screenshots/"; mode "default"
+    bindsym Shift+1 exec "xfce4-screenshooter -r -s ~/.local/share/screenshots/"; mode "default"
+    bindsym Control+Shift+2 exec puush -c -w; mode "default"
+    bindsym Control+Shift+3 exec puush -c -f; mode "default"
+    bindsym Control+Shift+4 exec puush -c -a; mode "default"
+    bindsym Return    mode "default"
+    bindsym Escape    mode "default"
+}
+bindsym Print exec "xfce4-screenshooter -f -c"
+bindsym Shift+Print exec "xfce4-screenshooter -w -c"
+bindsym Control+Print exec "xfce4-screenshooter -r -c"
+
 #
 # System
 #
@@ -215,30 +249,6 @@ mode $sysmenu {
     bindsym Return    mode "default"
     bindsym Escape    mode "default"
 }
-
-#volume control
-bindsym XF86AudioRaiseVolume exec amixer -q -M set Master 5%+ unmute && pkill -RTMIN+1 i3blocks 
-bindsym XF86AudioLowerVolume exec amixer -q -M set Master 5%- unmute && pkill -RTMIN+1 i3blocks 
-bindsym XF86AudioMute exec amixer -q set Master toggle && pkill -RTMIN+1 i3blocks
-
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-
-# Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-
-#screenshot
-bindsym Print exec "xfce4-screenshooter -f -c -s ~/.local/share/screenshots/"
-bindsym Shift+Print exec "xfce4-screenshooter -w -c -s ~/.local/share/screenshots/"
-bindsym Control+Print exec "xfce4-screenshooter -r -c -s ~/.local/share/screenshots/"
-
-bindsym Control+Shift+2 exec puush -c -w
-bindsym Control+Shift+3 exec puush -c -f
-bindsym Control+Shift+4 exec puush -c -a
 
 #
 # Apps
