@@ -77,3 +77,8 @@ map <C-9> :tablast<CR>
 
 " Plugin
 map <C-e> :NERDTreeToggle<CR>
+
+"
+" SYNTAX
+"
+au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
