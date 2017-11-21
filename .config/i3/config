@@ -374,7 +374,7 @@ exec --no-startup-id variety
 
 #Workspace 10: Terminal
 exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspaces/10.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1"
+exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 
