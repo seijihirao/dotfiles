@@ -9,3 +9,5 @@
 	quotepath = false
 [push]
 	default = simple
+[http]
+	emptyAuth = true
