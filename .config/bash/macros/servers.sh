@@ -45,11 +45,11 @@ sshfs-mfab(){
 #
 
 ssh-ba(){
-    ssh-gen ${USER} ba 2222
+    ssh-gen ${USER} ba 22
 }
 
 sshfs-ba(){
-    sshfs-gen ba ba:/media 2222
+    sshfs-gen ba ba:/media 22
 }
 
 #
