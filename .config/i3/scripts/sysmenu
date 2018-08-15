@@ -1,17 +1,14 @@
 #!/bin/bash
 
-res=$(echo "Logout;Suspend;Restart;Shutdown;Cancel" | rofi -sep ";" -dmenu -p "Power:" -hide-scrollbar -width 200 -lines 5)
+res=$(echo "   Logout;    Restart;    Shutdown;Cancel" | rofi -sep ";" -dmenu -p "Power:" -hide-scrollbar -theme sysmenu)
 
-if [ $res = "Logout" ]; then
+if [[ $res = *"Logout"* ]]; then
     i3-msg exit
 fi
-if [ $res = "Suspend" ]; then
-    systemctl suspend
-fi
-if [ $res = "Restart" ]; then
+if [[ $res = *"Restart"* ]]; then
     systemctl reboot
 fi
-if [ $res = "Shutdown" ]; then
+if [[ $res = *"Shutdown"* ]]; then
     systemctl poweroff
 fi
 exit 0

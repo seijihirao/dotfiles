@@ -1,4 +1,4 @@
-;=====================================================
+=====================================================
 ;
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/jaagr/polybar
@@ -14,7 +14,7 @@
 [colors]
 
 ;background = ${xrdb:color0:#222}
-background = #000000
+background = #080808
 background-alt = #444444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -24,7 +24,7 @@ advanced = #ff9966
 network = #6699ff
 simple = #99ff66
 
-primary = #0a6cf5
+primary =#215dcc
 secondary = #e60053
 alert = #bd2c40
 
@@ -61,12 +61,11 @@ module-margin-right = 2
 ;			F O N T S
 ;----------------------------------------------------------
 
-font-0 = PowerlineSymbols:size=15;3
-font-1 = Terminus:size=10;1
-font-2 = FontAwesome:size=10;2
-font-3 = Terminus:size=18;0
-font-4 = Monospace:size=28;3
-font-5 = FontAwesome:size=26;7
+font-0 = FontAwesome:size=10;0"
+font-1 = PowerlineSymbols:size=15;3
+font-2 = Monospace:size=10;0
+font-3 = sazanami-mincho:pixelsize=11;1
+font-4 = Monospace:size=7;-1
 ; Extra symbols: http://fontawesome.io/cheatsheet/
 
 ;----------------------------------------------------------
@@ -124,16 +123,16 @@ index-sort = true
 wrapping-scroll = false
 
 ; workspace icons
-ws-icon-0 = 1:;
-ws-icon-1 = 2:¶;¶
-ws-icon-2 = 3:►;►
-ws-icon-3 = 4:♪;♪
-ws-icon-4 = 5:∞;∞
-ws-icon-5 = 6:☕;☕
-ws-icon-6 = 7:⚅;⚅
-ws-icon-7 = 8:✆;✆
-ws-icon-8 = 9:⑨;⑨
-ws-icon-9 = 10:☠;☠
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
 ws-icon-default = 
 
 ; Only show workspaces on the same output as the bar
@@ -164,6 +163,10 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %icon%
 ; label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+label-separator = |
+label-separator-padding = 2
+label-separator-foreground = ${colors.background-alt}
 
 ;----------------------------------------------------------
 ;		   F I L E S Y S T E M
@@ -281,8 +284,8 @@ interval = 1.0
 
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
-format-connected-prefix = "  "
-format-disconnected-prefix = "  "
+format-connected-prefix = "  "
+format-disconnected-prefix = "  "
 ;format-connected-prefix = " net"
 format-connected-foreground = ${colors.foreground}
 format-connected-underline = ${colors.network}
@@ -301,8 +304,8 @@ interval = 1.0
 
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
-format-connected-prefix = "  "
-format-disconnected-prefix = "  "
+format-connected-prefix = "  "
+format-disconnected-prefix = "  "
 ;format-connected-prefix = " net"
 format-connected-foreground = ${colors.foreground}
 format-connected-underline = ${colors.network}
@@ -383,14 +386,14 @@ label = %date% %time%
 type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
-label-volume = ♪
+label-volume = 
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = 
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = ♪ ---
+label-muted = 
 
-bar-volume-width = 10
+bar-volume-width = 20
 bar-volume-foreground-0 = #222222
 bar-volume-foreground-1 = #333333
 bar-volume-foreground-2 = #444444
@@ -413,11 +416,11 @@ bar-volume-foreground-18 = #2222ff
 bar-volume-foreground-19 = #2222ff
 bar-volume-gradient = false
 bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
+bar-volume-indicator-font = 5
+bar-volume-fill = ■
+bar-volume-fill-font = 5
+bar-volume-empty = ■
+bar-volume-empty-font = 5
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 ;----------------------------------------------------------

@@ -210,21 +210,21 @@ bindsym XF86AudioPrev exec playerctl previous
 #screenshot
 bindsym $mod+Print mode "screenshot"
 mode "screenshot" {
-    bindsym 3 exec "xfce4-screenshooter -f -c"; mode "default"
-    bindsym 2 exec "xfce4-screenshooter -w -c"; mode "default"
-    bindsym 1 exec "xfce4-screenshooter -r -c"; mode "default"
-    bindsym Shift+3 exec "xfce4-screenshooter -f -s ~/.local/share/screenshots/"; mode "default"
-    bindsym Shift+2 exec "xfce4-screenshooter -w -s ~/.local/share/screenshots/"; mode "default"
-    bindsym Shift+1 exec "xfce4-screenshooter -r -s ~/.local/share/screenshots/"; mode "default"
-    bindsym Control+Shift+2 exec puush -c -w; mode "default"
-    bindsym Control+Shift+3 exec puush -c -f; mode "default"
-    bindsym Control+Shift+4 exec puush -c -a; mode "default"
+    bindsym 3 exec "xfce4-screenshooter -f -c"; screenshot full screen to clipboard --not working
+    bindsym 2 exec "xfce4-screenshooter -w -c"; screenshot window to clipboard --not working
+    bindsym 1 exec "xfce4-screenshooter -r -c"; screenshot area to clipboard --not working
+    bindsym Shift+3 exec "xfce4-screenshooter -f -s ~/.local/share/screenshots/"; screenshot full screen to dir
+    bindsym Shift+2 exec "xfce4-screenshooter -w -s ~/.local/share/screenshots/"; screenshot window to dir
+    bindsym Shift+1 exec "xfce4-screenshooter -r -s ~/.local/share/screenshots/"; screenshot area to dir
+    bindsym Control+Shift+2 exec puush -c -w; puush window
+    bindsym Control+Shift+3 exec puush -c -f; puush full screen
+    bindsym Control+Shift+4 exec puush -c -a; puush area
     bindsym Return    mode "default"
     bindsym Escape    mode "default"
 }
-bindsym Print exec "xfce4-screenshooter -f -c"
-bindsym Shift+Print exec "xfce4-screenshooter -w -c"
-bindsym Control+Print exec "xfce4-screenshooter -r -c"
+bindsym Print exec "xfce4-screenshooter -f -c"; screenshot full screen to clipboard --not working
+bindsym Shift+Print exec "xfce4-screenshooter -w -c"; screenshot window to clipboard --not working
+bindsym Control+Print exec "xfce4-screenshooter -r -c"; screenshot area to clipboard --not working
 
 #
 # System
