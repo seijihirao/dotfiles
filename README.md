@@ -14,10 +14,10 @@ Just run `$ sudo xargs pacman -S --needed --noconfirm < .config/.apps`
 
 ### i3
 
-![Workspace Web](.local/share/screenshots/preview/i3/[2017-11]desktop.png)
-![Workspace Web](.local/share/screenshots/preview/i3/[2017-11]ws1.png)
-![Workspace Web](.local/share/screenshots/preview/i3/[2017-11]ws3.png)
-![Workspace Web](.local/share/screenshots/preview/i3/[2017-11]ws10.png)
+![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]desktop.png)
+![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]ws1.png)
+![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]ws3.png)
+![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]ws10.png)
 
 ### XFCE4
 
