@@ -1,0 +1,19 @@
+@import "sidetab"
+
+configuration {
+    lines: 4;
+}
+
+
+window {
+	location:	 west;
+	anchor:		 west;
+	width:		 300px;
+	orientation: vertical;
+}
+
+mainbox {
+	spacing:  0.8em;
+	children: [ listview ];
+}
+

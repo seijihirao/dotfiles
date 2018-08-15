@@ -9,6 +9,7 @@ rofi.bw: 1
 rofi.location: 0
 rofi.padding: 5
 rofi.font: Cantarell 18
+rofi.theme: main
 
 rofi.case-sensitive: false
 

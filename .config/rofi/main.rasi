@@ -1,0 +1,18 @@
+@import "sidetab"
+
+configuration {
+    display-drun:    "";
+	display-run:	 "";
+	show-icons:      true;
+	modi:            "combi";
+    combi-modi: "drun,run";
+}
+
+window {
+	location:	 north west;
+	anchor:		 north west;
+	height:		 100%;
+	width:		 22%;
+	orientation: horizontal;
+}
+
