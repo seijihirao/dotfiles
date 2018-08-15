@@ -79,7 +79,7 @@
 
 # App Launcher
 !.config/rofi
-!.config/rofi/config
+!.config/rofi/*
 
 # Status Bar
 
