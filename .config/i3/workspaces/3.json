@@ -72,7 +72,7 @@
     "percent": 0.3,
     "swallows": [
        {
-        "window_role": "^media\\-anime\\-manager$"
+        "class": "Shinjiru"
        }
     ],
     "type": "con"

@@ -267,7 +267,7 @@ bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
 
 # apps
 bindsym $mod+c exec xfce4-terminal --hide-menubar --role="octave" --default-working-directory=".local/octave/" -e "octave --no-gui"
-bindsym $mod+b exec firefox-developer
+bindsym $mod+b exec firefox-developer-edition
 bindsym $mod+Control+b exec chromium
 bindsym $mod+i exec visual-studio-code-oss
 bindsym $mod+Control+i exec webstorm
@@ -349,10 +349,13 @@ for_window [window_role="task_dialog"] floating enable;border normal
 assign [window_role="^browser$"] $ws1
 assign [class="Code - OSS"] $ws2
 assign [class="jetbrains-webstorm"] $ws2
+assign [class="Git"] $ws2
 assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
 for_window [class="Spotify"] move to workspace $ws4
 assign [class="Slack"] $ws8
+assign [class="Mail"] $ws8
+assign [class="Thunderbird"] $ws8
 
 #
 #Autostarted application
@@ -406,7 +409,7 @@ exec --no-startup-id thunderbird
 exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspaces/3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
 exec --no-startup-id deluge-gtk
-exec --no-startup-id xfce4-terminal --hide-menubar --role="media-anime-manager" -e trackma-curses
+exec --no-startup-id Shinjiru
 
 #Workspace 1: Web
 exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspaces/1.json'"
