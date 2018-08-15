@@ -256,8 +256,8 @@ mode $sysmenu {
 
 # start dmenu (a program launcher)
 # bindsym $mod+Shift+space exec dmenu_run
-bindsym $mod+space exec rofi -fullscreen -show run -lines 3 
-bindsym Super_R exec rofi -fullscreen -show run -lines 3 
+bindsym $mod+space exec rofi -show combi -theme main
+bindsym Super_R exec rofi -show combi -theme main
 
 # task manager
 bindsym Control+Shift+Escape exec xfce4-taskmanager
@@ -285,16 +285,16 @@ exec --no-startup-id synclient PalmDetect=1 VertTwoFingerScroll=1 HorizTwoFinger
 # WINDOWS
 ####################################################
 
-set $ws1 "1:"
-set $ws2 "2:¶"
-set $ws3 "3:►"
-set $ws4 "4:♪"
-set $ws5 "5:∞"
-set $ws6 "6:☕"
-set $ws7 "7:⚅"
-set $ws8 "8:✆"
-set $ws9 "9:⑨"
-set $ws10 "10:☠"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 set $wsNull desktop
 
 #Define colors used
@@ -376,13 +376,13 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id variety
 
 #Workspace 10: Terminal
-exec --no-startup-id "i3-msg 'workspace \"10:☠\"; append_layout ~/.config/i3/workspaces/10.json'"
+exec --no-startup-id "i3-msg 'workspace \"10\"; append_layout ~/.config/i3/workspaces/10.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 
 #Workspace 9: Cirno
-#exec --no-startup-id "i3-msg 'workspace \"9:⑨\"; append_layout ~/.config/i3/workspaces/9.json'"
+#exec --no-startup-id "i3-msg 'workspace \"9\"; append_layout ~/.config/i3/workspaces/9.json'"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-3" --default-working-directory="/home/seiji/.config/bash"
@@ -394,24 +394,24 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 #exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 #Workspace 8: Chat
-exec --no-startup-id "i3-msg 'workspace \"8:✆\"; append_layout ~/.config/i3/workspaces/8.json'"
-exec --no-startup-id slack
+exec --no-startup-id "i3-msg 'workspace \"8\"; append_layout ~/.config/i3/workspaces/8.json'"
+#exec --no-startup-id slack
 exec --no-startup-id thunderbird
 
 #Workspace 4: Songs
-#exec --no-startup-id "i3-msg 'workspace \"4:♪\"; append_layout ~/.config/i3/workspaces/4.json'"
+#exec --no-startup-id "i3-msg 'workspace \"4\"; append_layout ~/.config/i3/workspaces/4.json'"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-file-manager" -e ranger
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spotify"
 
 #Workspace 3: Media
-exec --no-startup-id "i3-msg 'workspace \"3:►\"; append_layout ~/.config/i3/workspaces/3.json'"
+exec --no-startup-id "i3-msg 'workspace \"3\"; append_layout ~/.config/i3/workspaces/3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
 exec --no-startup-id deluge-gtk
 exec --no-startup-id Shinjiru
 
 #Workspace 1: Web
-exec --no-startup-id "i3-msg 'workspace \"1:\"; append_layout ~/.config/i3/workspaces/1.json'"
-exec --no-startup-id firefox-developer
+exec --no-startup-id "i3-msg 'workspace \"1\"; append_layout ~/.config/i3/workspaces/1.json'"
+exec --no-startup-id firefox-developer-edition
 
