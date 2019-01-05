@@ -6,7 +6,7 @@ set noswapfile
 
 " set title " Change the terminal title
 syntax on " Turn syntax highlighting on
-set number " Show line numbers
+set number relativenumber " Show hybrid (absolute/relative) line numbers
 
 " Indentation
 set shiftwidth=4
@@ -39,6 +39,7 @@ Plugin 'tpope/vim-fugitive'         " git
 
 " Completion
 " Plugin 'valloric/youcompleteme'     " autocomplete
+" Plugin 'zxqfl/tabnine-vim'
 
 " Interface
 Plugin 'vim-airline/vim-airline'    " statusbar
