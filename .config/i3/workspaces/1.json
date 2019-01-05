@@ -17,11 +17,11 @@
                "x": 0,
                "y": 0
             },
-            "name": "Firefox Developer Edition",
+            "name": "Chrome",
             "percent": 1,
             "swallows": [
                {
-                    "class": "^Firefox Developer Edition$"
+                    "class": "^Google-chrome$"
                }
             ],
             "type": "con"

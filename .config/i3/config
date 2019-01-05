@@ -268,7 +268,7 @@ bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
 # apps
 bindsym $mod+c exec xfce4-terminal --hide-menubar --role="octave" --default-working-directory=".local/octave/" -e "octave --no-gui"
 bindsym $mod+b exec firefox-developer-edition
-bindsym $mod+Control+b exec chromium
+bindsym $mod+Control+b exec google-chrome-stable
 bindsym $mod+i exec visual-studio-code-oss
 bindsym $mod+Control+i exec webstorm
 bindsym $mod+n exec spotify
@@ -349,6 +349,7 @@ for_window [window_role="task_dialog"] floating enable;border normal
 assign [window_role="^browser$"] $ws1
 assign [class="Code - OSS"] $ws2
 assign [class="jetbrains-webstorm"] $ws2
+assign [class="jetbrains-pycharm-ce"] $ws2
 assign [class="Git"] $ws2
 assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
@@ -394,9 +395,9 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 #exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 #Workspace 8: Chat
-exec --no-startup-id "i3-msg 'workspace \"8\"; append_layout ~/.config/i3/workspaces/8.json'"
-#exec --no-startup-id slack
-exec --no-startup-id thunderbird
+#exec --no-startup-id "i3-msg 'workspace \"8\"; append_layout ~/.config/i3/workspaces/8.json'"
+exec --no-startup-id slack
+#exec --no-startup-id thunderbird
 
 #Workspace 4: Songs
 #exec --no-startup-id "i3-msg 'workspace \"4\"; append_layout ~/.config/i3/workspaces/4.json'"
@@ -413,5 +414,5 @@ exec --no-startup-id Shinjiru
 
 #Workspace 1: Web
 exec --no-startup-id "i3-msg 'workspace \"1\"; append_layout ~/.config/i3/workspaces/1.json'"
-exec --no-startup-id firefox-developer-edition
+exec --no-startup-id google-chrome-stable
 
