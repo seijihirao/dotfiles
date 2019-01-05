@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PYTHONDONTWRITEBYTECODE=1
+
 #
 # Activates virtual env
 #
