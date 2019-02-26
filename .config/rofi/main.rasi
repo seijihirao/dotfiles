@@ -1,5 +1,3 @@
-@import "sidetab"
-
 configuration {
     display-drun:    "";
 	display-run:	 "";
@@ -15,4 +13,6 @@ window {
 	width:		 22%;
 	orientation: horizontal;
 }
+
+@import "sidetab"
 
