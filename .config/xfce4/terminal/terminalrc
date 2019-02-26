@@ -33,4 +33,7 @@ MiscUseShiftArrowsToScroll=FALSE
 MiscCopyOnSelect=FALSE
 MiscSlimTabs=FALSE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+MiscShowRelaunchDialog=TRUE
+MiscNewTabAdjacent=FALSE
+ScrollingOnOutput=FALSE
 
