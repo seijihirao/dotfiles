@@ -348,6 +348,7 @@ for_window [window_role="task_dialog"] floating enable;border normal
 #Open applications on specific workspaces
 assign [window_role="^browser$"] $ws1
 assign [class="Code - OSS"] $ws2
+assign [class="jetbrains-idea"] $ws2
 assign [class="jetbrains-webstorm"] $ws2
 assign [class="jetbrains-pycharm-ce"] $ws2
 assign [class="Git"] $ws2
