@@ -95,6 +95,10 @@
 # PAM ENV
 !.pam_environment
 
+# Notification Manager
+!.config/dunst
+!.config/dunst/dunstrc
+
 #
 # DESKTOP ENVIRONMENTS
 #
