@@ -62,7 +62,7 @@ module-margin-right = 2
 ;----------------------------------------------------------
 
 font-0 = FontAwesome:size=10;0"
-font-1 = PowerlineSymbols:size=15;3
+font-1 = PowerlineSymbols:size=9;1
 font-2 = Monospace:size=10;0
 font-3 = sazanami-mincho:pixelsize=11;1
 font-4 = Monospace:size=7;-1
