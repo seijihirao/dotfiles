@@ -107,6 +107,9 @@ bindsym $mod+Mod1+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
+# enter fullscreen mode for the focused container
+bindsym $mod+Shift+f fullscreen toggle global
+
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+Shift+s layout stacking
 bindsym $mod+Shift+w layout tabbed
@@ -260,7 +263,7 @@ bindsym $mod+space exec rofi -show combi -theme main
 bindsym Super_R exec rofi -show combi -theme main
 
 # task manager
-bindsym Control+Shift+Escape exec xfce4-taskmanager
+bindsym Control+Shift+Escape exec exec xfce4-terminal --hide-menubar --role="task manager" -e "htop"
 
 # start a terminal
 bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
@@ -345,12 +348,16 @@ for_window [window_role="task_dialog"] floating enable;border normal
 # APPS
 ####################################################
 
-#Open applications on specific workspaces
+# Open applications on specific workspaces
 assign [window_role="^browser$"] $ws1
+assign [class="Postman"] $ws1
 assign [class="Code - OSS"] $ws2
 assign [class="jetbrains-idea"] $ws2
 assign [class="jetbrains-webstorm"] $ws2
 assign [class="jetbrains-pycharm-ce"] $ws2
+assign [class="sun-awt-X11-XWindowPeer"] $ws2
+assign [class="sun-awt-X11-XDialogPeer"] $sw2
+assign [class="java-lang-Thread"] $sw2
 assign [class="Git"] $ws2
 assign [class="Trackma-gtk"] $ws3
 assign [title="Deluge"] $ws3
@@ -360,30 +367,31 @@ assign [class="Mail"] $ws8
 assign [class="Thunderbird"] $ws8
 
 #
-#Autostarted application
+# Autostarted application
 #
 
-#Xresources
+# Xrandr
+exec xrandr --output HDMI1 --auto --right-of eDP1 --output eDP1 --auto
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
+
+# Xresources
 exec xrdb -merge ~/.Xresources
 
-#Composite Manager
-exec --no-startup-id compton -cf
-
-#Gnome interfaces
+# Gnome interfaces
 exec --no-startup-id nm-applet
-#exec --no-startup-id pa-applet
+# exec --no-startup-id pa-applet
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-#Wallpapers
+# Wallpapers
 exec --no-startup-id variety
 
-#Workspace 10: Terminal
+# Workspace 10: Terminal
 exec --no-startup-id "i3-msg 'workspace \"10\"; append_layout ~/.config/i3/workspaces/10.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-1" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-2" -e ranger
 exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 
-#Workspace 9: Cirno
+# Workspace 9: Cirno
 #exec --no-startup-id "i3-msg 'workspace \"9\"; append_layout ~/.config/i3/workspaces/9.json'"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-1" --default-working-directory="/home/seiji/.config"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-2" --default-working-directory="/home/seiji/.config"
@@ -395,25 +403,27 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="cirno-9" --default-working-directory="/home/seiji/.config/i3"
 #exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
-#Workspace 8: Chat
+# Workspace 8: Chat
 #exec --no-startup-id "i3-msg 'workspace \"8\"; append_layout ~/.config/i3/workspaces/8.json'"
 exec --no-startup-id slack
 #exec --no-startup-id thunderbird
 
-#Workspace 4: Songs
+# Workspace 4: Songs
 #exec --no-startup-id "i3-msg 'workspace \"4\"; append_layout ~/.config/i3/workspaces/4.json'"
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-player" -e cmus
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-file-manager" -e ranger
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spectrum" -e cava
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spotify"
 
-#Workspace 3: Media
+# Workspace 3: Media
 exec --no-startup-id "i3-msg 'workspace \"3\"; append_layout ~/.config/i3/workspaces/3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
 exec --no-startup-id deluge-gtk
 exec --no-startup-id Shinjiru
 
-#Workspace 1: Web
+# Workspace 1: Web
 exec --no-startup-id "i3-msg 'workspace \"1\"; append_layout ~/.config/i3/workspaces/1.json'"
-exec --no-startup-id google-chrome-unstable
+exec --no-startup-id google-chrome-stable
 
+# Composite Manager
+exec --no-startup-id compton -cf
