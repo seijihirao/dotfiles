@@ -3,6 +3,7 @@
  * Copyright: deadguy
  */
 
+
 * {
 	background-color:            #080808;
 	text-color:                  #d3d7cf;
@@ -35,12 +36,15 @@
 }
 
 window {
+	location:	 west;
+	anchor:		 west;
+	orientation: horizontal;
 	children:	 [mainbox];
 }
 
 mainbox {
 	spacing:  0.8em;
-	children: [ entry,listview,sidebar ];
+	children: [ entry,listview,mode-switcher ];
 }
 
 button { padding: 5px 2px; }

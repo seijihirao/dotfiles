@@ -1,6 +1,6 @@
 #!/bin/bash
 
-res=$(echo "   Logout;    Restart;    Shutdown;Cancel" | rofi -sep ";" -dmenu -p "Power:" -hide-scrollbar -theme sysmenu)
+res=$(echo "Logout;Restart;Shutdown;Cancel" | rofi -sep ";" -dmenu -p "Power:" -hide-scrollbar -theme sysmenu)
 
 if [[ $res = *"Logout"* ]]; then
     i3-msg exit
