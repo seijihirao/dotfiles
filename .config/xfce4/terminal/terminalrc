@@ -23,7 +23,7 @@ MiscRewrapOnResize=TRUE
 BackgroundImageFile=/home/seiji/.local/share/wallpapers/min/steins gate - kurisu 2.png
 BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 BackgroundImageShading=0.620000
-BackgroundDarkness=0.750000
+BackgroundDarkness=0.850000
 ColorForeground=#dcdcdc
 ColorBackground=#000000000000
 ColorCursor=#dcdcdc
@@ -36,4 +36,6 @@ BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 MiscShowRelaunchDialog=TRUE
 MiscNewTabAdjacent=FALSE
 ScrollingOnOutput=FALSE
+MiscSearchDialogOpacity=100
+MiscShowUnsafePasteDialog=TRUE
 

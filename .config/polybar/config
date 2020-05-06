@@ -74,7 +74,7 @@ font-4 = Monospace:size=7;-1
 
 modules-left = i3
 modules-center = date
-modules-right = temperature vpn ip download upload battery volume
+modules-right = vpn ip download upload temperature battery volume
 ;modules-right = filesystem cpu memory temperature ip download upload wlan eth battery volume powermenu
 
 tray-position = right
