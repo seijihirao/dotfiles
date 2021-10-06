@@ -26,6 +26,9 @@
 !.config/bash/*/*
 .config/bash/personal
 
+!.zshrc
+!.p10k.zsh
+
 # Installed pacman apps
 !.config/.apps
 # Installed python libs
