@@ -16,7 +16,7 @@ set shiftround
 set expandtab
 
 " Make copy/paste between vim instances
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Remove Line Wrap
 set wrap!
