@@ -109,3 +109,8 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Run all config files for programming
+for file in ~/.config/bash/programming/*.sh; do
+    . $file
+done
