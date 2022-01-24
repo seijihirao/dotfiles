@@ -371,7 +371,7 @@ assign [class="Thunderbird"] $ws8
 #
 
 # Xrandr
-exec xrandr --output HDMI1 --auto --right-of eDP1 --output eDP1 --auto
+exec --no-startup-id . ~/.screenlayout/default.sh
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 
 # Xresources
@@ -418,7 +418,7 @@ exec --no-startup-id slack
 # Workspace 3: Media
 exec --no-startup-id "i3-msg 'workspace \"3\"; append_layout ~/.config/i3/workspaces/3.json'"
 exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
-exec --no-startup-id deluge-gtk
+#exec --no-startup-id deluge-gtk
 exec --no-startup-id Shinjiru
 
 # Workspace 1: Web
