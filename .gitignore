@@ -175,6 +175,10 @@
 !.config/xfce4/terminal/
 !.config/xfce4/terminal/*
 
+# xrandr
+!.screenlayout
+!.screenlayout/*
+
 #
 # Powerline
 #
