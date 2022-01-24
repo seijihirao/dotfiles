@@ -1,5 +1,5 @@
 # Flutter
-export PATH="$PATH:/Applications/flutter/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # FVM - version manager
-export FVM_HOME="$HOME/.config/programming/fvm"
+# export FVM_HOME="$HOME/.config/programming/fvm"
