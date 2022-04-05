@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Flutter
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 

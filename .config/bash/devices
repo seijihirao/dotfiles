@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Run for information: `$ ls -1 /sys/class/power_supply/`
+export DEV_BATTERY=BAT1
+
+# Run for information: `$ ls -1 /sys/class/net/`
+export DEV_WIFI=wlp2s0

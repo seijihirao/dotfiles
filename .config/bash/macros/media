@@ -1,9 +1,11 @@
+#!/bin/bash
+
 #
 # Songs
 #
 
 # Adds Cover art for all music files
-add-cover(){
+addcover() {
 
     local RESET="\e[0m"
     local BOLD="\e[1m"
@@ -49,7 +51,7 @@ add-cover(){
 }
 
 # Splits audio with cue file
-split-audio(){
+splitaudio(){
     for cue in ./*.cue; do
         file=$(cat ${cue} | grep FILE)
         file=${file%\"*}

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # i3-get-window-criteria - Get criteria for use with i3 config commands
 
@@ -9,7 +9,7 @@
 # quotes in "<string>" are not escaped properly. This is a problem with the output of `xprop`,
 # reported upstream: https://bugs.freedesktop.org/show_bug.cgi?id=66807
 
-i3-winprop(){
+i3_winprop(){
     PROGNAME=`basename "$0"`
 
     # Check for xwininfo and xprop

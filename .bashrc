@@ -1,8 +1,3 @@
-if [[ $- != *i* ]] ; then
-	# Shell is non-interactive.  Be done now!
-	return
-fi
-
 # Run all config files on subfolders
 for file in ~/.config/bash/**/*.sh; do
     . $file

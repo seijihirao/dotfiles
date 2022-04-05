@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # NPM
 export NPM_CONFIG_PREFIX=~/.config/programming/npm

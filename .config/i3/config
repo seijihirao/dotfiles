@@ -317,6 +317,7 @@ set $i-text-color   #cecece
 #client.focused    $border-color     $bg-color   $text-color     $border-color
 #client.unfocused  $i-border-color   $i-bg-color $i-text-color   $i-border-color
 
+exec --no-startup-id sh ~/bashrc
 exec --no-startup-id polybar main
 
 # Start i3bar to display a workspace bar (plus the system information i3status
