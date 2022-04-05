@@ -270,7 +270,7 @@ format-underline = ${colors.network}
 
 [module/ip]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 3.0
 
 format-connected = <label-connected>
@@ -293,7 +293,7 @@ label-disconnected-underline = ${colors.network}
 
 [module/upload]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 1.0
 
 format-connected = <label-connected>
@@ -313,7 +313,7 @@ label-disconnected-underline = ${colors.network}
 
 [module/download]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 1.0
 
 format-connected = <label-connected>
@@ -337,7 +337,7 @@ label-disconnected-underline = ${colors.network}
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 3.0
 
 format-connected = <label-connected>
@@ -397,7 +397,7 @@ format-underline = ${colors.primary}
 label = %date% %time%
 
 [module/volume]
-type = internal/alsa
+type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
 label-volume = 
@@ -444,7 +444,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/battery]
 type = internal/battery
 ; To list battery & adapter: $ ls -1 /sys/class/power_supply/
-battery = BAT0
+battery = BAT1
 adapter = AC0
 full-at = 99
 

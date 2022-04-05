@@ -16,7 +16,7 @@ set shiftround
 set expandtab
 
 " Make copy/paste between vim instances
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Remove Line Wrap
 set wrap!
@@ -29,7 +29,7 @@ nnoremap <leader>/ :set hlsearch!<CR>
 "
 filetype off
 
-set rtp+=~/.vim/bundle/vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/vundle.vim'
