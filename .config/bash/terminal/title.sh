@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Change the window title of X terminals
 case ${TERM} in
 	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|interix|konsole*)

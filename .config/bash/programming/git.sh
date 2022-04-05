@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     .  /usr/share/git/completion/git-prompt.sh

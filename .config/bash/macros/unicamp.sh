@@ -1,8 +1,4 @@
-#!/bin/bash
-# Go to unicamp's folder
-cd-unicamp(){
-     cd ~/Documents/unicamp/$1/$2/
-} 
+#!/bin/sh
 
 #Test unicamp labs
 test-lab(){

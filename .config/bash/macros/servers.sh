@@ -29,30 +29,6 @@ sshfs-gen(){
 }
 
 #
-# Rep MFAB
-#
-
-ssh-mfab(){
-    ssh-gen pi mfab
-}
-
-sshfs-mfab(){
-    sshfs-gen mfab pi@mfab:/media
-}
-
-#
-# Bacchan
-#
-
-ssh-ba(){
-    ssh-gen ${USER} ba 22
-}
-
-sshfs-ba(){
-    sshfs-gen ba ba:/media 22
-}
-
-#
 # IC
 #
 

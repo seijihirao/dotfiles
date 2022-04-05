@@ -17,5 +17,10 @@
     }
 ,
 "git.confirmSync": false,
-"files.autoSave": "afterDelay"
+"files.autoSave": "off",
+"typescript.updateImportsOnFileMove.enabled": "always",
+"javascript.updateImportsOnFileMove.enabled": "always",
+"explorer.confirmDragAndDrop": false,
+"workbench.colorTheme": "Dracula",
+"window.zoomLevel": 1
 }

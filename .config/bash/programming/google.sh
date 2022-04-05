@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # BINARY PATH
 export PATH=$PATH:/home/seiji/.google/google-cloud-sdk/bin
 
