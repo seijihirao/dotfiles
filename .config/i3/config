@@ -370,8 +370,7 @@ assign [class="Thunderbird"] $ws8
 # Autostarted application
 #
 
-# Xrandr
-exec xrandr --output HDMI1 --auto --right-of eDP1 --output eDP1 --auto
+# Notifications
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 
 # Xresources
@@ -404,8 +403,9 @@ exec --no-startup-id xfce4-terminal --hide-menubar --role="terminal-3"
 #exec --no-startup-id sleep 5 && feh -g 1920x1080 --zoom=fill --title="cirno-5" ~/.local/share/wallpapers/9
 
 # Workspace 8: Chat
-#exec --no-startup-id "i3-msg 'workspace \"8\"; append_layout ~/.config/i3/workspaces/8.json'"
-exec --no-startup-id slack
+exec --no-startup-id "i3-msg 'workspace \"8\"; append_layout ~/.config/i3/workspaces/8.json'"
+#exec --no-startup-id slack
+exec --no-startup-id discord
 #exec --no-startup-id thunderbird
 
 # Workspace 4: Songs
@@ -416,10 +416,10 @@ exec --no-startup-id slack
 #exec --no-startup-id xfce4-terminal --hide-menubar --role="songs-spotify"
 
 # Workspace 3: Media
-exec --no-startup-id "i3-msg 'workspace \"3\"; append_layout ~/.config/i3/workspaces/3.json'"
-exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
-exec --no-startup-id deluge-gtk
-exec --no-startup-id Shinjiru
+#exec --no-startup-id "i3-msg 'workspace \"3\"; append_layout ~/.config/i3/workspaces/3.json'"
+#exec --no-startup-id xfce4-terminal --hide-menubar --role="media-file-manager" -e ranger
+#exec --no-startup-id deluge-gtk
+#exec --no-startup-id Shinjiru
 
 # Workspace 1: Web
 exec --no-startup-id "i3-msg 'workspace \"1\"; append_layout ~/.config/i3/workspaces/1.json'"
