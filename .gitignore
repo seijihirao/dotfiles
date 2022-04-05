@@ -25,6 +25,7 @@
 !.config/bash/*/
 !.config/bash/*/*
 .config/bash/personal
+.config/bash/devices.sh
 
 !.zshrc
 !.p10k.zsh
