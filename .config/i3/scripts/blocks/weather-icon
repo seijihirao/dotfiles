@@ -1,0 +1,62 @@
+#!/bin/bash
+# Based on http://openweathermap.org/current
+
+API_KEY="591c826dc5294f4ed9ecb00a3c0d361f"
+
+# Check on http://openweathermap.org/find
+
+URGENT_LOWER=0
+URGENT_HIGHER=30
+
+ICON_SUNNY=""
+ICON_CLOUDY=""
+ICON_RAINY=""
+ICON_STORM=""
+ICON_SNOW=""
+ICON_FOG=""
+
+SYMBOL_CELSIUS="℃"
+
+LOCATION=$(curl -s http://ip-api.com/line/?fields=lat,lon 2>/dev/null)
+LAT=$(echo $LOCATION | tr -s ' ' | cut -d ' ' -f 1)
+LON=$(echo $LOCATION | tr -s ' ' | cut -d ' ' -f 2)
+WEATHER_INFO=$(curl -s "http://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&units=metric&appid=${API_KEY}" 2>/dev/null)
+# WEATHER_URL="http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&appid=${API_KEY}&units=metric"
+
+# WEATHER_INFO=$(wget -qO- "${WEATHER_URL}")
+WEATHER_MAIN=$(echo "${WEATHER_INFO}" | grep -o -e '\"main\":\"[a-Z]*\"' | awk -F ':' '{print $2}' | tr -d '"')
+WEATHER_TEMP=$(echo "${WEATHER_INFO}" | grep -o -e '\"temp\":\-\?[0-9]*' | awk -F ':' '{print $2}' | tr -d '"')
+
+if [[ "${WEATHER_MAIN}" = *Snow* ]]; then
+  echo "${ICON_SNOW}"
+  echo "${ICON_SNOW}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Rain* ]] || [[ "${WEATHER_MAIN}" = *Drizzle* ]]; then
+  echo "${ICON_RAINY}"
+  echo "${ICON_RAINY}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Cloud* ]]; then
+  echo "${ICON_CLOUDY}"
+  echo "${ICON_CLOUDY}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Clear* ]]; then
+  echo "${ICON_SUNNY}"
+  echo "${ICON_SUNNY}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Fog* ]] || [[ "${WEATHER_MAIN}" = *Mist* ]]; then
+  echo "${ICON_FOG}"
+  echo "${ICON_FOG}"
+  echo ""
+elif [[ "${WEATHER_MAIN}" = *Thunderstorm* ]]; then
+  echo "${ICON_STORM}"
+  echo "${ICON_STORM}"
+  echo ""
+else
+  echo "${WEATHER_MAIN}"
+  echo "${WEATHER_MAIN}"
+  echo ""
+fi
+
+if [[ "${WEATHER_TEMP}" -lt "${URGENT_LOWER}" ]] || [[ "${WEATHER_TEMP}" -gt "${URGENT_HIGHER}" ]]; then
+  exit 33
+fi

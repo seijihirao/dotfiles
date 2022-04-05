@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Notifications
+# /usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+# Xresources
+# xrdb -merge ~/.Xresources &
+
+# Gnome interfaces
+# nm-applet &
+# pa-applet &
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Wallpapers
+# variety &
+
+# Composite Manager
+# compton -cf &
+
