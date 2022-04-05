@@ -374,5 +374,5 @@ assign [class="Thunderbird"] $ws8
 # Autostarted application
 #
 
-exec --no-startup-id ~/.config/i3/scripts/startup_apps
-exec --no-startup-id ~/.config/i3/scripts/bg_apps
+exec --no-startup-id ~/.config/i3/scripts/startup/apps
+exec --no-startup-id ~/.config/i3/scripts/startup/bg
