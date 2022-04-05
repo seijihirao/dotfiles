@@ -74,7 +74,7 @@ font-4 = Monospace:size=7;-1
 
 modules-left = i3
 modules-center = date
-modules-right = vpn ip download upload temperature battery volume
+modules-right = filesystem vpn ip download upload temperature battery volume
 ;modules-right = filesystem cpu memory temperature ip download upload wlan eth battery volume powermenu
 
 tray-position = right
@@ -270,7 +270,7 @@ format-underline = ${colors.network}
 
 [module/ip]
 type = internal/network
-interface = wlp2s0
+interface = ${env:DEV_WIFI}
 interval = 3.0
 
 format-connected = <label-connected>
@@ -293,7 +293,7 @@ label-disconnected-underline = ${colors.network}
 
 [module/upload]
 type = internal/network
-interface = wlp2s0
+interface = ${env:DEV_WIFI}
 interval = 1.0
 
 format-connected = <label-connected>
@@ -313,7 +313,7 @@ label-disconnected-underline = ${colors.network}
 
 [module/download]
 type = internal/network
-interface = wlp2s0
+interface = ${env:DEV_WIFI}
 interval = 1.0
 
 format-connected = <label-connected>
@@ -337,7 +337,7 @@ label-disconnected-underline = ${colors.network}
 
 [module/wlan]
 type = internal/network
-interface = wlp2s0
+interface = ${env:DEV_WIFI}
 interval = 3.0
 
 format-connected = <label-connected>
@@ -444,7 +444,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/battery]
 type = internal/battery
 ; To list battery & adapter: $ ls -1 /sys/class/power_supply/
-battery = BAT1
+battery = ${env:DEV_BATTERY}
 adapter = AC0
 full-at = 99
 

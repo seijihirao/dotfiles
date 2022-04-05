@@ -25,6 +25,7 @@
 !.config/bash/*/
 !.config/bash/*/*
 .config/bash/personal
+.config/bash/devices.sh
 
 !.zshrc
 !.p10k.zsh
@@ -138,6 +139,8 @@
 !.config/i3/workspaces/*
 !.config/i3/scripts/
 !.config/i3/scripts/*
+!.config/i3/scripts/*/*
+.config/i3/scripts/startup
 
 #
 # File Manager

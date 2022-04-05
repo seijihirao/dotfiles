@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ -f ~/.bash_git ]; then
 source ~/.bash_git
