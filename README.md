@@ -14,7 +14,7 @@ To select startup apps and workspace capturing go to file
 
 ### Polybar
 
-Setup the environment variables locates at
+Setup the environment variables located at
 
 `.config/bash/devices.sh`
 
