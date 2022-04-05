@@ -139,7 +139,8 @@
 !.config/i3/workspaces/*
 !.config/i3/scripts/
 !.config/i3/scripts/*
-.config/i3/scripts/*_apps
+.config/i3/scripts/bg_apps
+.config/i3/scripts/startup_apps
 
 #
 # File Manager
