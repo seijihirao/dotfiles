@@ -139,7 +139,7 @@
 !.config/i3/workspaces/*
 !.config/i3/scripts/
 !.config/i3/scripts/*
-# !.config/i3/scripts/startup
+.config/i3/scripts/startup
 
 #
 # File Manager
