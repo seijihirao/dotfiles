@@ -1,6 +1,6 @@
 // vim:ts=4:sw=4:et
 {
-    // tabbed split container with 2 children
+    // tabbed split container with 1 children
     "border": "normal",
     "floating": "auto_off",
     "layout": "tabbed",
@@ -12,106 +12,19 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 600,
-               "width": 800,
+               "height": 725,
+               "width": 664,
                "x": 0,
                "y": 0
             },
-            "name": "Spotify",
-            "percent": 0.5,
+            "name": "Music",
+            "percent": 1,
             "swallows": [
                {
-               "window_role": "^songs\\-spotify$"
+                    "window_class": "^Spotify$"
                }
             ],
             "type": "con"
-        },
-        {
-            // splitv split container with 2 children
-            "border": "normal",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.5,
-            "type": "con",
-            "nodes": [
-                {
-                    // splith split container with 2 children
-                    "border": "normal",
-                    "floating": "auto_off",
-                    "layout": "splith",
-                    "percent": 0.9,
-                    "type": "con",
-                    "nodes": [
-                        {
-                            "border": "pixel",
-                            "current_border_width": 2,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 458,
-                               "width": 802,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "Terminal - cmus v2.7.1",
-                            "percent": 0.5,
-                            "swallows": [
-                               {
-                                 "window_role": "^songs\\-player$"
-                               }
-                            ],
-                            "type": "con"
-                        },
-                        {
-                            // splitv split container with 1 children
-                            "border": "normal",
-                            "floating": "auto_off",
-                            "layout": "splitv",
-                            "percent": 0.5,
-                            "type": "con",
-                            "nodes": [
-                                {
-                                    "border": "pixel",
-                                    "current_border_width": 2,
-                                    "floating": "auto_off",
-                                    "geometry": {
-                                       "height": 458,
-                                       "width": 802,
-                                       "x": 0,
-                                       "y": 0
-                                    },
-                                    "name": "Terminal",
-                                    "percent": 1,
-                                    "swallows": [
-                                       {
-                                          "window_role": "^songs\\-file\\-manager$"
-                                       }
-                                    ],
-                                    "type": "con"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 2,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 458,
-                       "width": 802,
-                       "x": 0,
-                       "y": 0
-                    },
-                    "name": "Terminal - cava",
-                    "percent": 0.1,
-                    "swallows": [
-                       {
-                          "window_role": "^songs\\-spectrum$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
         }
     ]
 }
