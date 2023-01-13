@@ -13,3 +13,4 @@ for file in ~/.config/bash/*; do
         . $file
     fi
 done
+

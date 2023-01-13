@@ -114,3 +114,4 @@ source $ZSH/oh-my-zsh.sh
 for file in ~/.config/bash/programming/*.sh; do
     . $file
 done
+

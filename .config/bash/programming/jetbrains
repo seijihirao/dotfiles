@@ -1,5 +1,7 @@
 #!/bin/bash
 
 # BINARY PATH
-export PATH=$PATH:/home/diesel12/.local/lib/idea/bin
+export PATH=$PATH:~/.local/lib/idea/bin
 
+# Toolbox App
+export PATH=$PATH:~/.local/share/JetBrains/Toolbox/scripts
