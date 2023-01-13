@@ -152,12 +152,15 @@ mode "resize" {
         bindsym Shift+Right resize shrink right 10 px or 10 ppt
 
         # float on right edge
-        bindsym Control+Right sticky enable; floating enable; border none; resize set 480 270; move absolute position 886 498;
-        bindsym Control+Shift+Right sticky disable; floating enable; border none; resize set 480 270; move absolute position 890 500;
+        bindsym Control+Right fullscreen disable; sticky enable; floating enable; border none; resize set 480 270; move absolute position 886 498;
+        bindsym Control+Shift+Right fullscreen disable; sticky disable; floating enable; border none; resize set 480 270; move absolute position 890 500;
         
         # float on left edge
-        bindsym Control+Left sticky enable; floating enable; border none; resize set 480 270; move absolute position 0 500;
-        bindsym Control+Shift+Left sticky enable; floating enable; border none; resize set 480 270; move absolute position 0 500;
+        bindsym Control+Left fullscreen disable; sticky enable; floating enable; border none; resize set 480 270; move absolute position 0 500;
+        bindsym Control+Shift+Left fullscreen disable; sticky enable; floating enable; border none; resize set 480 270; move absolute position 0 500;
+
+        # disable float
+        bindsym Control+Return sticky disable; floating disable;
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -318,7 +321,6 @@ set $i-text-color   #cecece
 #client.unfocused  $i-border-color   $i-bg-color $i-text-color   $i-border-color
 
 exec --no-startup-id ~/.config/bash/devices
-exec --no-startup-id polybar main
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -375,5 +377,5 @@ assign [class="Thunderbird"] $ws8
 # Autostarted application
 #
 
-exec --no-startup-id ~/.config/i3/scripts/startup/apps
 exec --no-startup-id ~/.config/i3/scripts/startup/bg
+exec --no-startup-id ~/.config/i3/scripts/startup/apps
