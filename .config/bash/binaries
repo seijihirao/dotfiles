@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# BINARY PATH
+export PATH=$PATH:/home/seiji/.local/bin
+

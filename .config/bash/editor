@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export VISUAL=/usr/bin/vim
+
