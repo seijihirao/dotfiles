@@ -14,26 +14,10 @@
 !.gitignore_global
 !.gitconfig
 
-# Bash
-!.bashrc
-!.bash_profile
-!.bash_logout
-!.inputrc
-
-!.config/bash/
-!.config/bash/*
-!.config/bash/*/
-!.config/bash/*/*
-.config/bash/personal
-.config/bash/devices.sh
-
-!.zshrc
-!.p10k.zsh
-
-# Installed pacman apps
-!.config/.apps
-# Installed python libs
-!.config/.python-libs
+# Installed packages
+!.config/install/
+!.config/install/apps
+!.config/install/python-libs
 
 # README
 !README.md
@@ -225,6 +209,27 @@
 #
 # Programming
 #
+
+# Bash
+!.bashrc
+!.bash_profile
+!.bash_logout
+!.inputrc
+
+!.config/bash/
+!.config/bash/*
+!.config/bash/*/
+!.config/bash/*/*
+.config/bash/personal
+.config/bash/devices.sh
+
+# ZSH
+!.zshrc
+!.p10k.zsh
+
+# TMUX
+!.config/tmux/
+!.config/tmux/tmux.conf
 
 # Vim
 !.vimrc
