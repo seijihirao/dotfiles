@@ -265,7 +265,7 @@ bindsym Super_R exec rofi -show combi -theme main
 bindsym Control+Shift+Escape exec exec xfce4-terminal --hide-menubar --role="task manager" -e "htop"
 
 # start a terminal
-bindsym $mod+Return exec "xfce4-terminal --hide-menubar"
+bindsym $mod+Return exec xfce4-terminal --hide-menubar
 
 # apps
 bindsym $mod+c exec xfce4-terminal --hide-menubar --role="octave" --default-working-directory=".local/octave/" -e "octave --no-gui"
