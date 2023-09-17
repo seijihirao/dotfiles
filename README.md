@@ -24,8 +24,7 @@ Setup the environment variables located at
 
 ![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]desktop.png)
 ![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]ws1.png)
-![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]ws3.png)
-![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]ws10.png)
+![Workspace Web](.local/share/screenshots/preview/i3/[2023-09]ws10.png)
 
 ### XFCE4
 
