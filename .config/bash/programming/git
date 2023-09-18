@@ -4,6 +4,10 @@ if [ -f ~/.bash_git ]; then
     . ~/.bash_git
 fi
 
+if [ -f ~/.git-prompt.sh ]; then
+    . ~/.git-prompt.sh 
+fi
+
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     .  /usr/share/git/completion/git-prompt.sh
 fi
