@@ -22,5 +22,19 @@
 "javascript.updateImportsOnFileMove.enabled": "always",
 "explorer.confirmDragAndDrop": false,
 "workbench.colorTheme": "Dracula",
-"window.zoomLevel": 1
+"window.zoomLevel": 1,
+"prettier.vueIndentScriptAndStyle": true,
+"prettier.singleQuote": true,
+"[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.tabSize": 2,
+"[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"redhat.telemetry.enabled": false,
+"git.autofetch": true
 }
