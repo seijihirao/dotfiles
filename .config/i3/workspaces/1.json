@@ -17,11 +17,11 @@
                "x": 0,
                "y": 0
             },
-            "name": "Chrome",
+            "name": "Browser",
             "percent": 1,
             "swallows": [
                {
-                    "window_role": "^browser$"
+                    "window_class": "^Navigator$"
                }
             ],
             "type": "con"
