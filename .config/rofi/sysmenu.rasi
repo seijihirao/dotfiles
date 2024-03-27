@@ -2,17 +2,21 @@ configuration {
     lines: 4;
 }
 
-
 window {
 	location:	 west;
 	anchor:		 west;
 	width:		 300px;
 	orientation: vertical;
+  height: 280px;
 }
 
 mainbox {
 	spacing: 0.8em;
 	children: [ listview ];
+}
+
+input {
+  enabled: false;
 }
 
 @import "sidetab"

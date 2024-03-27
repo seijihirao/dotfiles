@@ -1,15 +1,15 @@
 configuration {
-    display-drun:    "";
-	display-run:	 "";
+  display-drun:    "";
+  display-run:	 "";
 	show-icons:      true;
 	modi:            "combi";
-    combi-modi: "drun,run";
+  combi-modi: "drun,run";
 }
 
 window {
 	location:	 north west;
 	anchor:		 north west;
-	height:		 100%;
+	height:		 80%;
 	width:		 22%;
 	orientation: horizontal;
 }

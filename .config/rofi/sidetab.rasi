@@ -5,17 +5,17 @@
 
 
 * {
-	background-color:            #080808;
+  background-color:            #00000000;
 	text-color:                  #d3d7cf;
-	selbg:                       #215d9c;
-	actbg:                       #262626;
+	selbg:                       #ececec;
+	actbg:                       #060606;
 	urgbg:                       #e53935;
-	winbg:			     #26c6da;
+	winbg:			                 #262626cc;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
 	selected-normal-background:  @actbg;
-	normal-background:           @background-color;
+	normal-background:           @winbg;
 
 	selected-urgent-foreground:  @background-color;
 	urgent-foreground:           @text-color;
@@ -40,32 +40,38 @@ window {
 	anchor:		 west;
 	orientation: horizontal;
 	children:	 [mainbox];
+  border-radius: 0 30px 30px 0;
+  border: 2px 2px 2px 0;
+  border-color: #88888888;
+  background-color: @winbg;
 }
 
 mainbox {
-	spacing:  0.8em;
-	children: [ entry,listview,mode-switcher ];
+  padding: 0.3em 0 0 0;
+	spacing:  0.3em;
+	children: [ entry,listview ];
 }
 
-button { padding: 5px 2px; }
+button { 
+  padding: 5px 2px; 
+}
 
 button selected {
 	background-color: @active-background;
 	text-color:       @background-color;
 }
 
-inputbar {
-	padding: 5px;
-	spacing: 5px;
-}
-
 listview {
+  border: 1px 0 0 0;
+  border-color: #555555;
 	spacing: 0.5em;
 	dynamic: false;
 	cycle:   true;
 }
 
-element { padding: 10px; }
+element { 
+  padding: 10px; 
+}
 
 entry {
 	expand:         false;
@@ -75,7 +81,6 @@ entry {
 }
 
 element normal.normal {
-	background-color: @normal-background;
 	text-color:       @normal-foreground;
 }
 
@@ -107,7 +112,7 @@ element selected.active {
 }
 
 element alternate.normal {
-	background-color: @normal-background;
+  background-color: none;
 	text-color:       @normal-foreground;
 }
 
