@@ -2,7 +2,6 @@
 *
 
 # Now removing from ignore list
-
 !.gitignore
 
 # Common folders
@@ -29,102 +28,11 @@
 # LICENSE
 !LICENSE.txt
 
+###########
 #
-# Environment
+# GENERIC
 #
-
-# Autostart
-
-!.config/autostart/
-!.config/autostart/*
-# !.config/xfce4/autostart # added bellow
-
-# Sound
-
-!.config/pulse/
-!.config/pulse/*.pa
-!.pulse/
-!.pulse/equalizer-*.tdb
-
-# Desktop
-
-!.local/share/wallpapers/
-!.local/share/wallpapers/min/
-!.local/share/wallpapers/min/*
-!.local/share/wallpapers/9/
-!.local/share/wallpapers/9/*
-!.local/share/wallpapers/blur/
-!.local/share/wallpapers/blur/*
-
-!.config/variety/
-!.config/variety/variety.conf
-
-!.conky/
-!.conky/*
-!.conky/**/
-!.conky/**/*
-
-!.devilspie
-!.devilspie/*
-
-# App Launcher
-!.config/rofi
-!.config/rofi/*
-
-# Status Bar
-
-!.config/polybar
-!.config/polybar/config
-
-# Composite Manager
-
-!.config/compton.conf
-
-# PAM ENV
-!.pam_environment
-
-# Notification Manager
-!.config/dunst
-!.config/dunst/dunstrc
-
-#
-# DESKTOP ENVIRONMENTS
-#
-
-# XFCE
-
-!.config/xfce4/
-!.config/xfce4/xinitrc
-!.config/xfce4/autostart
-!.config/xfce4/desktop/
-!.config/xfce4/desktop/*
-!.config/xfce4/xfconf/
-!.config/xfce4/xfconf/xfce-perchannel-xml/
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
-# !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml # Desktop is managed by variety
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
-# !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml # Changes too often
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
-!.config/xfce4/xfwm4/
-!.config/xfce4/xfwm4/*
-
-!.local/share/xfce4/
-!.local/share/xfce4/helpers
-!.local/share/xfce4/helpers/*
-
-# i3
-
-!.config/i3/
-!.config/i3/config
-!.config/i3/i3blocks.conf
-!.config/i3/workspaces/
-!.config/i3/workspaces/*
-!.config/i3/scripts/
-!.config/i3/scripts/*
-!.config/i3/scripts/*/*
-.config/i3/scripts/startup
+###
 
 #
 # File Manager
@@ -148,23 +56,11 @@
 # Terminal
 #
 
-# X resources - mainly for urxvt
-!.Xdefaults
-!.Xresources
-
 # Konsole/Yakuake
 !.config/konsolerc
 !.config/yakuakerc
 !.local/share/konsole/
 !.local/share/konsole/*
-
-# xfce4-terminal
-!.config/xfce4/terminal/
-!.config/xfce4/terminal/*
-
-# xrandr
-!.screenlayout
-!.screenlayout/*
 
 #
 # Powerline
@@ -194,11 +90,17 @@
 !.config/mpv/
 !.config/mpv/input.conf
 
+# Sound - Pulse
+!.config/pulse/
+!.config/pulse/*.pa
+!.pulse/
+!.pulse/equalizer-*.tdb
+
 # Music - DeadBeef
 !.config/deadbeef/
 !.config/deadbeef/config
 
-# Sound - Cava
+# Music - Cava
 !.config/cava/
 !.config/cava/config
 
@@ -207,7 +109,7 @@
 !.trackma/*.json
 
 #
-# Programming
+# Bash
 #
 
 # Bash
@@ -231,6 +133,10 @@
 !.config/tmux/
 !.config/tmux/tmux.conf
 
+#
+# Test Editors
+#
+
 # Vim
 !.vimrc
 
@@ -238,3 +144,142 @@
 !.config/Code\ -\ OSS
 !.config/Code\ -\ OSS/User
 !.config/Code\ -\ OSS/User/settings.json
+
+###########
+#
+#   X11
+#
+###
+
+# X resources - mainly for urxvt
+!.Xdefaults
+!.Xresources
+
+# Autostart
+!.config/autostart/
+!.config/autostart/*
+# !.config/xfce4/autostart # added bellow
+
+# xfce4-terminal
+!.config/xfce4/terminal/
+!.config/xfce4/terminal/*
+
+# xrandr
+!.screenlayout
+!.screenlayout/*
+
+
+# variety
+!.config/variety/
+!.config/variety/variety.conf
+
+# conky
+!.conky/
+!.conky/*
+!.conky/**/
+!.conky/**/*
+
+# devilspie
+!.devilspie
+!.devilspie/*
+
+# Composite Manager
+!.config/compton.conf
+
+# Notification Manager
+!.config/dunst
+!.config/dunst/dunstrc
+
+# rofi
+!.config/rofi
+!.config/rofi/*
+
+# polybar
+!.config/polybar
+!.config/polybar/config
+
+#
+# DESKTOP ENVIRONMENTS
+#
+
+# XFCE
+
+!.config/xfce4/
+!.config/xfce4/xinitrc
+!.config/xfce4/autostart
+!.config/xfce4/desktop/
+!.config/xfce4/desktop/*
+!.config/xfce4/xfconf/
+!.config/xfce4/xfconf/xfce-perchannel-xml/
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml
+# !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml # Desktop is managed by variety
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mixer.xml
+# !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml # Changes too often
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+!.config/xfce4/xfwm4/
+!.config/xfce4/xfwm4/*
+
+!.local/share/xfce4/
+!.local/share/xfce4/helpers
+!.local/share/xfce4/helpers/*
+
+# i3
+!.config/i3/
+!.config/i3/config
+!.config/i3/i3blocks.conf
+!.config/i3/workspaces/
+!.config/i3/workspaces/*
+!.config/i3/scripts/
+!.config/i3/scripts/*
+!.config/i3/scripts/*/*
+.config/i3/scripts/startup
+
+
+###########
+#
+# WAYLAND
+#
+###
+
+# fuzzel
+!.config/fuzzel
+!.config/fuzzel/*
+
+# waybar
+!.config/waybar
+!.config/waybar/*
+
+#
+# DESKTOP ENVIRONMENTS
+#
+
+# sway
+!.config/sway/
+!.config/sway/config
+!.config/sway/scripts/
+!.config/sway/scripts/*
+!.config/sway/configs/
+!.config/sway/configs/*
+.config/sway/scripts/startup
+
+
+###########
+#
+# PERSONAL
+#
+###
+
+# Walpapers
+!.local/share/wallpapers/
+!.local/share/wallpapers/min/
+!.local/share/wallpapers/min/*
+!.local/share/wallpapers/9/
+!.local/share/wallpapers/9/*
+!.local/share/wallpapers/blur/
+!.local/share/wallpapers/blur/*
+
+# PAM ENV
+!.pam_environment
+
