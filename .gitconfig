@@ -9,5 +9,6 @@
 	quotepath = false
 [push]
 	default = simple
+  autoSetupRemote = true
 [http]
 	emptyAuth = true
