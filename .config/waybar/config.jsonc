@@ -1,0 +1,35 @@
+// -*- mode: jsonc -*-
+{
+      // General Settings
+    "layer": "bottom",
+    "position": "bottom",
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+    
+    // Load Modules
+    "include": ["~/.config/waybar/modules.jsonc"],
+
+    // Choose the order of the modules
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad",
+        "custom/media"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "sway/language",
+        "custom/updates",
+        "pulseaudio",
+        "bluetooth",
+        "battery", 
+        "network",
+        "group/hardware",
+        "custom/cliphist",
+        "tray",
+        "custom/exit"
+    ]
+}
