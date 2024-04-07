@@ -93,8 +93,6 @@
 # Sound - Pulse
 !.config/pulse/
 !.config/pulse/*.pa
-!.pulse/
-!.pulse/equalizer-*.tdb
 
 # Music - DeadBeef
 !.config/deadbeef/
@@ -172,16 +170,6 @@
 # variety
 !.config/variety/
 !.config/variety/variety.conf
-
-# conky
-!.conky/
-!.conky/*
-!.conky/**/
-!.conky/**/*
-
-# devilspie
-!.devilspie
-!.devilspie/*
 
 # Composite Manager
 !.config/compton.conf
