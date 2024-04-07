@@ -1,0 +1,8 @@
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart inplace (preserves your layout/session, can be used to upgrade sway)
+bindsym $mod+Shift+r restart
+
+#power options
+bindsym Control+Mod1+Delete exec $app-logout

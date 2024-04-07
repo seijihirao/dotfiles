@@ -1,0 +1,63 @@
+include /etc/sway/config.d/*
+
+##########
+#
+# DEFAULTS
+#
+#
+
+set $mod Mod4
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:DejaVu Sans Mono, Icons 8
+
+set $ws1 
+set $ws2 
+set $ws3 
+set $ws4 
+set $ws5 
+set $ws6 
+set $ws7 
+set $ws8 
+set $ws9 
+set $ws10 
+set $wsNull desktop
+
+#Define colors used
+set $bg-color       #333333
+set $i-bg-color     #333333
+set $u-bg-color     #993333
+set $border-color   #5588AA
+set $i-border-color #666666
+set $text-color     #ffffff
+set $i-text-color   #cecece
+
+set $monitor-w  1920
+set $monitor-h  1080
+
+set $app-logout waylogout
+set $app-selector fuzzel
+set $app-terminal kitty
+set $app-browser firefox-developer-edition
+set $app-browser2 chromium 
+set $app-ide code
+set $app-ide2 code
+set $app-ide visual-studio-code-oss
+set $app-ide2 webstorm
+set $app-music spotify
+set $app-filemanager "$app-terminal ranger"
+set $app-filemanager2 pcmanfm
+
+set $app-bar waybar 
+set $app-notifier mako
+set $app-wallpaper ~/.config/sway/scripts/wallpaper.sh
+set $app-netowrkmanager nm-applet
+
+set $app-screenshot grimshot
+
+include ~/.config/sway/configs/system
+include ~/.config/sway/configs/windows
+include ~/.config/sway/configs/inputs
+include ~/.config/sway/configs/apps
+
