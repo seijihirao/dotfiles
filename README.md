@@ -30,6 +30,23 @@ Desktop | Menu
 :-:|:-:
 ![Workspace Web](.local/share/screenshots/preview/gnome/[2017-02]desktop.png) | ![Workspace Web](.local/share/screenshots/preview/gnome/[2017-02]menu.png)
 
+## Apps used
+
+List of apps used by default on each environment, listed `-` if there is no app is used, or if the default app from WM is used.
+
+/ | Sway | i3 | XFCE4 | Gnome
+:-:|:-:|:-:|:-:|:-:
+Bar | waybar | polybar | - | -
+Menus | fuzzel | rofi | - | -
+Notifier | mako | xfce4-notifyd | - | -
+Wallpaper | - | variety | variety | variety
+Network Manager | nm-applet | nm-applet | - | -
+Sysmenu | waylogout | rofi | - | -
+Layout Manager | - | -| devilspie | -
+Terminal | kitten | xfce4-terminal | - | -
+Filemanager | ranger | ranger | pcmanfm | thunar
+
+
 ## Setup/Config files
 
 ### i3
