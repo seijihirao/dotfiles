@@ -105,8 +105,8 @@
 !.config/cava/config
 
 # Anime
-!.trackma/
-!.trackma/*.json
+!.config/trackma/
+!.config/trackma/*.json
 
 #
 # Bash
