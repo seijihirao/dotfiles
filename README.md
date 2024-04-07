@@ -1,8 +1,13 @@
 # SEIJI DOTFILES
+![Sway](https://img.shields.io/badge/sway-current-blue?style=flat-square)
+![i3](https://img.shields.io/badge/i3-2023-green?style=flat-square)
+![XFCE4](https://img.shields.io/badge/xfce-2017-red?style=flat-square)
+![GNOME](https://img.shields.io/badge/gnome-2017-red?style=flat-square)
 
 Hello!!! And wellcome to my dotfiles!
 
-Here are listed my shared configuration files :)! Feel free to use something or send me pull requests/feedbacks.
+Here are listed my shared configuration files 😃
+Feel free to use something or send me pull requests/feedbacks.
 
 ## Preview
 
