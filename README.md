@@ -20,6 +20,12 @@ Setup the environment variables located at
 
 ## Preview
 
+### Sway
+
+![Workspace Web](.local/share/screenshots/preview/sway/[2024-04]desktop.png)
+![Workspace Web](.local/share/screenshots/preview/sway/[2024-04]ws1.png)
+![Workspace Web](.local/share/screenshots/preview/sway/[2024-04]ws10.png)
+
 ### i3
 
 ![Workspace Web](.local/share/screenshots/preview/i3/[2018-08]desktop.png)

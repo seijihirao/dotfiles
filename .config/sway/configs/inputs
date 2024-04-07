@@ -34,12 +34,17 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 #screenshot
+set $screenshot-filename .local/share/screenshots/Screenshot_$(date '+%Y-%m-%d_%H-%M-%S').png
 bindsym $mod+Print mode "screenshot"
 mode "screenshot" {
     bindsym 1 exec '$app-screenshot copy area'; mode "default"
     bindsym 2 exec '$app-screenshot copy window'; mode "default"
     bindsym 3 exec '$app-screenshot copy output'; mode "default"
     bindsym 4 exec '$app-screenshot copy screen'; mode "default"
+    bindsym Shift+1 exec '$app-screenshot savecopy area   $screenshot-filename'; mode "default"
+    bindsym Shift+2 exec '$app-screenshot savecopy window $screenshot-filename'; mode "default"
+    bindsym Shift+3 exec '$app-screenshot savecopy output $screenshot-filename'; mode "default"
+    bindsym Shift+4 exec '$app-screenshot savecopy screen $screenshot-filename'; mode "default"
     bindsym Return    mode "default"
     bindsym Escape    mode "default"
 }
