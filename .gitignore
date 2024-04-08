@@ -231,6 +231,9 @@
 #
 ###
 
+# Electron
+!.config/electron*-flags.conf
+
 # fuzzel
 !.config/fuzzel
 !.config/fuzzel/*
@@ -251,7 +254,6 @@
 !.config/sway/configs/
 !.config/sway/configs/*
 .config/sway/scripts/startup
-
 
 ###########
 #
