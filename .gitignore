@@ -233,6 +233,7 @@
 
 # Electron
 !.config/electron*-flags.conf
+!.config/chromium-flags.conf
 
 # fuzzel
 !.config/fuzzel
