@@ -36,14 +36,11 @@ set $i-text-color   #cecece
 set $monitor-w  1920
 set $monitor-h  1080
 
-set $app-logout waylogout
 set $app-selector fuzzel
 set $app-terminal kitty
 set $app-browser firefox-developer-edition
 set $app-browser2 chromium 
 set $app-ide code
-set $app-ide2 code
-set $app-ide visual-studio-code-oss
 set $app-ide2 webstorm
 set $app-music spotify
 set $app-filemanager "$app-terminal ranger"
@@ -56,8 +53,8 @@ set $app-netowrkmanager nm-applet
 
 set $app-screenshot grimshot --notify
 
-include ~/.config/sway/configs/system
-include ~/.config/sway/configs/windows
-include ~/.config/sway/configs/inputs
-include ~/.config/sway/configs/apps
+include ~/.config/sway/configs/system.sw
+include ~/.config/sway/configs/windows.sw
+include ~/.config/sway/configs/inputs.sw
+include ~/.config/sway/configs/apps.sw
 

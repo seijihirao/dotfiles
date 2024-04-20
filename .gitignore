@@ -245,7 +245,7 @@
 !.config/sway/scripts/*
 !.config/sway/configs/
 !.config/sway/configs/*
-.config/sway/scripts/startup
+.config/sway/scripts/startup.sw
 
 ###########
 #

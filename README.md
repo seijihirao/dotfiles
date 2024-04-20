@@ -46,7 +46,7 @@ Menus | fuzzel | rofi | - | -
 Notifier | mako | xfce4-notifyd | - | -
 Wallpaper | - | variety | variety | variety
 Network Manager | nm-applet | nm-applet | - | -
-Sysmenu | waylogout | rofi | - | -
+Sysmenu | - | rofi | - | -
 Layout Manager | - | -| devilspie | -
 Terminal | kitten | xfce4-terminal | - | -
 Filemanager | ranger | ranger | pcmanfm | thunar
