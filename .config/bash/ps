@@ -43,7 +43,7 @@ if [[ $- == *i* ]] ; then
         fi
         
         # System
-        local PS_SYSTEM="\[${BLUE}\][\u@\h \[${WHITE}\]\W\[${BLUE}\]]"
+        local PS_SYSTEM="\[${BOLD}\]\[${BLUE}\][\u@\h \[${WHITE}\]\W\[${BLUE}\]]"
 
         PS1="\[${BOLD}\]${PS_GIT}${PS_VENV}${PS_SYSTEM}\$\[${RESET}\] "
         PS2="\[${BOLD}${BLUE}\]\$\[${RESET}\] "
