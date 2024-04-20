@@ -77,15 +77,6 @@
 # Media
 #
 
-# Browser - Firefox
-!.mozilla/
-!.mozilla/firefox/
-!.mozilla/firefox/profiles.ini
-!.mozilla/firefox/profile/
-!.mozilla/firefox/profile/user.js
-!.mozilla/firefox/profile/chrome/
-!.mozilla/firefox/profile/chrome/*
-
 # Video - MPV
 !.config/mpv/
 !.config/mpv/input.conf
