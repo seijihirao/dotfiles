@@ -3,7 +3,7 @@
 	email = rodrigo.seiji.hirao@gmail.com
 
 [core]
-	editor = vim
+	editor = nvim
 	fileMode = false
 	excludesfile = ~/.gitignore_global
 	quotepath = false
