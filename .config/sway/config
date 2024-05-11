@@ -47,11 +47,13 @@ set $app-filemanager "$app-terminal ranger"
 set $app-filemanager2 pcmanfm
 
 set $app-bar waybar 
-set $app-notifier mako
+set $app-notifier mako --default-timeout=5000
 set $app-wallpaper ~/.config/sway/scripts/wallpaper.sh
 set $app-netowrkmanager nm-applet
 
 set $app-screenshot grimshot --notify
+
+set $timeout-screen 300
 
 include ~/.config/sway/configs/system.sw
 include ~/.config/sway/configs/windows.sw

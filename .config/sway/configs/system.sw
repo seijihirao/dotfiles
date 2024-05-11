@@ -17,5 +17,11 @@ mode "restart" {
     bindsym Escape  mode "default"
 }
 
+# idle options
+exec swayidle -w \
+	timeout $timeout-screen 'swaymsg "output * power off"' \
+    resume 'swaymsg "output * power on"' 
+
+
 # dbus
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
