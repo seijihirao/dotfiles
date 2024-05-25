@@ -18,6 +18,9 @@ mode "restart" {
 }
 
 # idle options
+for_window [class=".*"] inhibit_idle fullscreen
+for_window [app_id=".*"] inhibit_idle fullscreen
+
 exec swayidle -w \
 	timeout $timeout-screen 'swaymsg "output * power off"' \
     resume 'swaymsg "output * power on"' 
