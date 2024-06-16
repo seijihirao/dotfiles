@@ -53,7 +53,7 @@ set $app-netowrkmanager nm-applet
 
 set $app-screenshot grimshot --notify
 
-set $timeout-screen 300
+set $timeout-screen 600
 
 include ~/.config/sway/configs/system.sw
 include ~/.config/sway/configs/windows.sw
