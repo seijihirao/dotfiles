@@ -129,6 +129,9 @@
 # Vim
 !.vimrc
 
+# Nvim
+!.config/nvim
+
 # Visual Studio
 !.config/Code\ -\ OSS
 !.config/Code\ -\ OSS/User

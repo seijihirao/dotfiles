@@ -22,6 +22,7 @@ alias fgrep='fgrep --colour=auto'
 # Programming
 #
 alias emacs="emacs -nw"
+alias vim="nvim"
 
 #
 # Utility
