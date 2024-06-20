@@ -11,9 +11,9 @@ set number relativenumber " Show hybrid (absolute/relative) line numbers
 " Indentation
 set expandtab           " enter spaces when tab is pressed
 set textwidth=120       " break lines when line length increases
-set tabstop=4           " use 4 spaces to represent tab
-set softtabstop=4
-set shiftwidth=4        " number of spaces to use for auto indent
+set tabstop=2           " use 2 spaces to represent tab
+set softtabstop=2
+set shiftwidth=2        " number of spaces to use for auto indent
 set autoindent          " copy indent from current line when starting a new line
 set smartindent
 set smarttab
