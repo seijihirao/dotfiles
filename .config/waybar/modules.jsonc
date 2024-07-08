@@ -105,11 +105,11 @@
     // Clock
     "clock": {
         // TIMEDATEFORMAT
-        "format": "{:%H:%M %a}",
+        "format-alt": "{:%H:%M %a}",
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // START CLOCK FORMAT
-        "format-alt": "{:%H:%M %a %Y-%m-%d}"
+        "format": "{:%H:%M %a %Y-%m-%d}"
         // END CLOCK FORMAT
     },
 
