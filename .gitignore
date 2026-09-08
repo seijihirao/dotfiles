@@ -117,6 +117,8 @@
 # ZSH
 !.zshrc
 !.p10k.zsh
+!.config/zsh/
+!.config/zsh/*.zsh
 
 # TMUX
 !.config/tmux/
