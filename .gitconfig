@@ -1,6 +1,6 @@
 [user]
 	name = Rodrigo Seiji Piubeli Hirao
-	email = rodrigo.seiji.hirao@gmail.com
+	email = rodrigo.hirao@wildlifestudios.com
 
 [core]
 	editor = nvim
@@ -12,3 +12,17 @@
   autoSetupRemote = true
 [http]
 	emptyAuth = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[url "git@git.topfreegames.com:"]
+	insteadOf = https://git.topfreegames.com/
+
+[includeIf "hasconfig:remote.*.url:https://github.com/**"]
+	path = ~/.gitconfig-github
+[includeIf "hasconfig:remote.*.url:git@github.com:*/**"]
+	path = ~/.gitconfig-github
+[includeIf "hasconfig:remote.*.url:ssh://git@github.com/**"]
+	path = ~/.gitconfig-github
