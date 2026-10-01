@@ -30,7 +30,7 @@ Daily driver these days is a Mac, so the terminal stack is what gets the most lo
 Tool | Config
 :-:|:-:
 Shell | zsh + [oh-my-zsh](https://ohmyz.sh) + [powerlevel10k](https://github.com/romkatv/powerlevel10k) — `.zshrc`, `.config/zsh/`, `.p10k.zsh`
-Multiplexer | tmux + [tpm](https://github.com/tmux-plugins/tpm) + catppuccin — `.config/tmux/tmux.conf`
+Multiplexer | tmux + [tpm](https://github.com/tmux-plugins/tpm) + catppuccin — `.config/tmux/tmux.conf` ([keymaps](.config/tmux/KEYMAPS.md))
 Editor | [neovim](https://github.com/seijihirao/nvim-config) (submodule) — `.config/nvim`
 Git | `.gitconfig`, `.gitignore_global`
 
