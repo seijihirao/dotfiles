@@ -13,3 +13,6 @@ source "$ZSH/oh-my-zsh.sh"
 for file in ~/.config/zsh/*.zsh(N); do
   source "$file"
 done
+
+# Unity CLI
+. "/Users/rodrigo.hirao/.unity/env"
